@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 811dcebd7d1265e418b8b343ecc6d37b
+  m_SerializeEntries:
+  - m_GUID: dd0ee4f4936f9bb46912239e16d24550
+    m_Address: Assets/Prefab/Character/Muchef.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a1d5a918fe87c1148a9eee3d123d89d4
+    m_Address: Assets/Prefab/Character/KoreanHat.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 404bcd38b0673004689a3f7b79821942
+    m_Address: Assets/Prefab/Character/NonLa.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: eede0eadf4e47aa4eb31b88806b47317, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 798c527614e465348a9509cdadaa08af, type: 2}
+    - {fileID: 11400000, guid: d135ef3a9e03c6b449c5f2483aacc004, type: 2}

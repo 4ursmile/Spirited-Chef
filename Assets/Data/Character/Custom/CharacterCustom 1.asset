@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6533f5411d0fa4699797491c9b4246, type: 3}
+  m_Name: CharacterCustom 1
+  m_EditorClassIdentifier: 
+  _hatStringAddress: nonhan
+  _hairColor: {r: 0, g: 0, b: 0, a: 1}
+  _skinColor: {r: 0, g: 0, b: 0, a: 1}
+  _shirtColor: {r: 0.22075468, g: 0.32957935, b: 1, a: 1}
+  _name: 
+  _descriptionKey: 
+  _normalOutlineColor: {r: 0, g: 0, b: 0, a: 1}
+  _selectedOutlineColor: {r: 0, g: 1, b: 0, a: 1}
+  _outlineWidthNormal: 0.1
+  _outlineWidthSelected: 0.5

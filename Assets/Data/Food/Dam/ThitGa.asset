@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66504f9b058746a41b86fff4754a7a0c, type: 3}
+  m_Name: ThitGa
+  m_EditorClassIdentifier: 
+  _nameID: material_name_3
+  _descriptionID: material_des_3
+  _icon: {fileID: -1648602042, guid: c19c7d289fd44f641a0c3d09da3e2fe3, type: 3}
+  _iconScale: 1
+  _price: 400
+  _level: 0
+  _calorie: 270
+  _timeToPrepare: 6
+  _isUnlocked: 0
+  <NeedToWash>k__BackingField: 1
+  <Type>k__BackingField: 1
+  <WashTime>k__BackingField: 3
+  <ForwardsMaterial>k__BackingField:
+  - {fileID: 11400000, guid: 85270832b3297674cade28e0dd39de27, type: 2}
+  - {fileID: 11400000, guid: a52e48374a9f50a4aa3c94daf490add6, type: 2}

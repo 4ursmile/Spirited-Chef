@@ -1,0 +1,17 @@
+KEY,English,Vietnamese,Korean
+talk_ejoymeal,Enjoy your meal!,Chúc ngon miệng!,맛있게 드세요!
+talk_excellent,Excellent!,Quá ngon!,훌륭한!
+talk_fine,Fine!,Tạm ổn!,괜찮은!
+talk_bad,Very bad!,Quá tệ!,아주 나쁜!
+mess_notsuitable,Not suitable!,Không hợp lệ!,적합하지 않습니다!
+mess_already,There are already users!,Đã có người sử dụng,이미 사용자가 있습니다!
+mess_available,Not available!,Không khả dụng,사용 불가!
+mess_food,Just delivery!,Chỉ việc giao hàng,그냥 배달!
+mess_carrying,You are carrying something!,Bạn đang mang gì đó!,당신은 무언가를 가지고 다니고 있습니다!
+mess_noone,There are no one at all!,Không có nhân vật đang chọn!,아무도 없습니다!
+mess_nonneed,No need!,Không cần thiết,필요 없음!
+mess_nothing,There are no thing to update!,Không có gì để nâng cấp,업데이트 할 것이 없습니다!
+mess_wash,Washing material food!,Rửa sạch nguyên liệu trước,세탁소 음식!
+talk_iwant_1,I want something have,Tôi muốn thứ gì đó có ,나는 무언가를 원한다
+talk_iwant_2,Please give me food have,Bạn có thể cho tôi thứ gì đó có,나에게 음식을주세요
+talk_iwant_3,Give me something have,Đưa tôi thứ gì đó có,나에게 뭔가 줘

@@ -1,0 +1,690 @@
+fileFormatVersion: 2
+guid: c62c6015189db2845a341e13921e122b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RauCu2_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 780.8
+        width: 199.6
+        height: 195.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ea5b4149de53e1488608acf1411e28d
+      internalID: 962318352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RauCu2_1
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 780.8
+        width: 199.6
+        height: 195.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b2d63f461ffdd743aa56012bf572afd
+      internalID: -1615384108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RauCu2_2
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 780.8
+        width: 199.6
+        height: 195.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f936f446ee5feae4481698b0e0d544bd
+      internalID: 1920591159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RauCu2_3
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 780.8
+        width: 199.6
+        height: 195.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1c4982f8da1234880fc828e70a4bf3
+      internalID: -955340658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RauCu2_4
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 780.8
+        width: 199.6
+        height: 195.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9e5efaf89d4794fb543347751e479c
+      internalID: 2117815443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RauCu2_5
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 585.8
+        width: 199.6
+        height: 195.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 070eda17099a2d44383f5004832d2481
+      internalID: -1533942145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RauCu2_6
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 585.8
+        width: 199.6
+        height: 195.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5fb4bf3f1bf21e4c9e71e344fd7dc0c
+      internalID: 1398623941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RauCu2_7
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 585.8
+        width: 199.6
+        height: 195.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9cadb2e30d4b464fa1b11711cf0431a
+      internalID: 639342173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RauCu2_8
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 585.8
+        width: 199.6
+        height: 195.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85635f71035a0794c9a1bcde39bfbcd1
+      internalID: -571328713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RauCu2_9
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 585.8
+        width: 199.6
+        height: 195.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66da8806e9d53c541850af1fb245025d
+      internalID: -1622122986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RauCu2_10
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 390.8
+        width: 199.6
+        height: 195.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2565251be5dbead4783a35c025779a74
+      internalID: 1092714197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RauCu2_11
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 390.8
+        width: 199.6
+        height: 195.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d76f7eaac0e208e4c91e57284d49bba6
+      internalID: 1407541053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RauCu2_12
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 390.8
+        width: 199.6
+        height: 195.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a81518268df5ef149af7cfbee369c6e4
+      internalID: -246134591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RauCu2_13
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 390.8
+        width: 199.6
+        height: 195.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 966bfd80548220d448bd72591448a0cb
+      internalID: -324669307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RauCu2_14
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 390.8
+        width: 199.6
+        height: 195.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d83335b8fea1ce4685007a84c429aea
+      internalID: -2079663182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RauCu2_15
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 195.8
+        width: 199.6
+        height: 195.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b51ce3c04aba541b3d846a4a742e41
+      internalID: -836315538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RauCu2_16
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 195.8
+        width: 199.6
+        height: 195.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0ff3fed0e8045742a6e391a6a540d14
+      internalID: -1933653491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RauCu2_17
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 195.8
+        width: 199.6
+        height: 195.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e198d4bde5c3946b67e77cdf88b1c9
+      internalID: -1365468866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RauCu2_18
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 195.8
+        width: 199.6
+        height: 195.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7db1a155584567642b27ed534713ef21
+      internalID: 1333005344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RauCu2_19
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 195.8
+        width: 199.6
+        height: 195.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d0999c475c32546bcb76552bad06df
+      internalID: -1987143487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RauCu2_20
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 0.80000305
+        width: 199.6
+        height: 195.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36f4603e597cbc84bb63f77935aa2659
+      internalID: 513881038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RauCu2_21
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 0.80000305
+        width: 199.6
+        height: 195.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da67319539a28ca4c8bef75cfbb7b11e
+      internalID: -485834311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RauCu2_22
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 0.80000305
+        width: 199.6
+        height: 195.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e13fbfe481272a6448f33eb30f5c49e2
+      internalID: 644102506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RauCu2_23
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 0.80000305
+        width: 199.6
+        height: 195.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28928e24134cb194ba06f47aaccc4f24
+      internalID: -2143090818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RauCu2_24
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 0.80000305
+        width: 199.6
+        height: 195.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3200f3cc2e260f5409e76512908c124f
+      internalID: 2118811700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e7c1827e48581ca4da0be6297308fa5b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      RauCu2_0: 962318352
+      RauCu2_1: -1615384108
+      RauCu2_10: 1092714197
+      RauCu2_11: 1407541053
+      RauCu2_12: -246134591
+      RauCu2_13: -324669307
+      RauCu2_14: -2079663182
+      RauCu2_15: -836315538
+      RauCu2_16: -1933653491
+      RauCu2_17: -1365468866
+      RauCu2_18: 1333005344
+      RauCu2_19: -1987143487
+      RauCu2_2: 1920591159
+      RauCu2_20: 513881038
+      RauCu2_21: -485834311
+      RauCu2_22: 644102506
+      RauCu2_23: -2143090818
+      RauCu2_24: 2118811700
+      RauCu2_3: -955340658
+      RauCu2_4: 2117815443
+      RauCu2_5: -1533942145
+      RauCu2_6: 1398623941
+      RauCu2_7: 639342173
+      RauCu2_8: -571328713
+      RauCu2_9: -1622122986
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

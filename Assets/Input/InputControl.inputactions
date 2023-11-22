@@ -1,0 +1,54 @@
+{
+    "name": "InputControl",
+    "maps": [
+        {
+            "name": "Action",
+            "id": "ed6cc14f-781c-472b-990f-f745b691121d",
+            "actions": [
+                {
+                    "name": "Click",
+                    "type": "Button",
+                    "id": "4da754e2-3de0-4a42-9cb6-dc315b5db657",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Zoom",
+                    "type": "Value",
+                    "id": "0cd9140a-af12-4e2e-9da1-f35c55762a7b",
+                    "expectedControlType": "Delta",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "147bde38-f7ef-4844-9ad2-606bbdf456e0",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b7129c01-6da5-4e5c-ae03-6f9524756077",
+                    "path": "<Mouse>/scroll",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Zoom",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

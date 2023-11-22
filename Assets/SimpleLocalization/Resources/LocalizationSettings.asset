@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63817d93022759543b57e795c78efe11, type: 3}
+  m_Name: LocalizationSettings
+  m_EditorClassIdentifier: 
+  TableId: 1DwCxzIIfRkgy0rhl3SBR4cIslPtCdJEZi-H66GP2viE
+  Sheets:
+  - Name: Setting
+    Id: 0
+    TextAsset: {fileID: 4900000, guid: 0bcc4f0d7ca86fa41847a59763b1dbc3, type: 3}
+  - Name: Note_tick
+    Id: 1475961340
+    TextAsset: {fileID: 4900000, guid: 6f7cbaaf19c757344ab5fc25d6426a0f, type: 3}
+  - Name: UFood_des
+    Id: 1503761242
+    TextAsset: {fileID: 4900000, guid: 9f34876c9b1d3d04281a4dba51ad6f56, type: 3}
+  - Name: Thoai
+    Id: 976399588
+    TextAsset: {fileID: 4900000, guid: 51aacc9af2de092478257247927ff3d8, type: 3}
+  - Name: Food_name
+    Id: 1727672304
+    TextAsset: {fileID: 4900000, guid: 11944e1e8cff61d4e83486488a3107a4, type: 3}
+  - Name: Food_des
+    Id: 803205158
+    TextAsset: {fileID: 4900000, guid: cbce3a4df58d76343a6b270bda843a0d, type: 3}
+  SaveFolder: {fileID: 102900000, guid: c392831e85f928548b8494fefd912562, type: 3}

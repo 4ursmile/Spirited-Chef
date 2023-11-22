@@ -1,0 +1,28 @@
+KEY,English,Vietnamese,Korean
+note_tulanh_name,Fridge,Tủ lạnh,냉장고
+note_tulanh_des,"The refrigerator is the place to store and preserve foods, you can get food from here.","Tủ lạnh là nơi chứa và bảo quản các loại thực phẩm, bạn có thể lẩy các thực phẩm từ đây.",냉장고는 음식을 보관하고 보존 할 수있는 곳입니다. 여기에서 음식을 얻을 수 있습니다.
+note_tugiavi_name,Spice cabinet,Tủ gia vị,향신료 캐비닛
+note_tugiavi_des,A place where you can take spices for cooking.,Là nơi bạn có thể lấy các loại gia vị sử dụng cho việc nấu ăn.,요리를 위해 향신료를 먹을 수있는 곳.
+note_bep_name,Kitchen,Bếp,주방
+note_bep_des,Where you can cook food.,Nơi bạn có thể nấu thức ăn.,음식을 요리 할 수있는 곳.
+note_giaohang_name,Delivery,Bàn giao hàng,배달
+note_giaohang_des,The place where you can deliver the food has been completed for your guests.,Nơi bạn có thể giao thức ăn đã hoàn thành cho những vị khách của mình.,음식을 배달 할 수있는 곳이 손님을 위해 완성되었습니다.
+note_ochua_name,Raw material table,Bàn nguyên liệu,원료 테이블
+note_ochua_des,Where you can leave pre -prepared ingredients.,Nơi bạn có thể để các nguyên liệu đã sơ chế sẵn.,사전 준비된 재료를 남길 수있는 곳.
+note_bonrua_name,Sink,Bồn rửa,싱크대
+note_bonrua_des,Where you can wash the ingredients before preliminary processing.,Nơi bạn có thể rửa sạch sẽ các nguyên liệu trước khi sơ chế.,예비 가공 전에 성분을 씻을 수있는 곳.
+note_soche_name,Preliminary table,Bàn sơ chế,예비 테이블
+note_soche_des,Where you have preliminary processing your raw materials.,Nơi bạn có sơ chế nguyên liệu của mình.,원자재를 예비 처리하는 곳.
+note_chongchen_name,Bowl stack,Ngăn xếp bát,그릇 스택
+note_chongchen_des,Where you can take the bowl to present your dishes before delivering it to guests.,Nơi bạn có thể lấy bát để trình bày các món ăn của mình trước khi giao cho khách.,손님에게 배달하기 전에 그릇을 가져갈 수있는 곳.
+note_chongdia_name,Dish,Ngăn xếp dĩa,접시
+note_chongdia_des,Where you can take the plate to store your ingredients and dishes.,Nơi bạn có thể lấy đĩa để đựng các nguyên liệu và món ăn của mình.,재료와 요리를 보관하기 위해 접시를 가져갈 수있는 곳.
+note_chuanbi_name,Preparatory table,Bàn chuẩn bị,준비 테이블
+note_chuanbi_des,The place where you present your food before delivering it to guests.,Nơi bạn trình bày món ăn của mình trước khi giao cho khách.,손님에게 음식을 제공하기 전에 음식을 선물하는 곳.
+note_thungrac_name,Bin,Thùng rác,큰 상자
+note_thungrac_des,Where you throw away garbage bags.,Nơi bạn vứt các túi rác.,쓰레기 봉투를 버리는 곳.
+note_thuvien_name,Library,Thư viện,도서관
+note_thuvien_des,Where you can read the information of dishes,Nơi bạn có thể đọc các thông tin các món ăn,요리의 정보를 읽을 수있는 곳
+note_tuirac_name,Garbage bag,Túi rác,쓰레기 봉투
+note_tuirac_des,"The garbage bag is created during food preparation. Be careful to clean it for environmental protection, and some difficult reasons to say.","Túi rác được tạo ra trong quá trình chuẩn bị thức ăn. Hãy cẩn thận dọn nó vì bảo vệ môi trường, và một số lý do khó nói.",쓰레기 봉투는 음식 준비 중에 만들어집니다. 환경 보호를 위해 청소하고 몇 가지 어려운 이유를 조심하십시오.
+note_note_des,"Descriptions of food, recipes and how to prepare dishes in the game are created urgently in a short time, so there is no reference value.","Những mô tả món ăn, công thức và cách chế biến các món ăn trong game được tạo ra gấp gáp trong thời gian ngắn, nên không có giá trị tham khảo.","음식, 레시피 및 게임에서 요리를 준비하는 방법에 대한 설명은 짧은 시간에 긴급하게 만들어 지므로 참조 가치가 없습니다."

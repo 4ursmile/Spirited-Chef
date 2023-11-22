@@ -1,0 +1,800 @@
+fileFormatVersion: 2
+guid: 4e8fd47607dfb6c4ba161e44d345afbb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MonAn4_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 815.2
+        width: 170.66667
+        height: 183.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40130ad5b7dc94946ba928510ac01ebb
+      internalID: -339756911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonAn4_1
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 815.2
+        width: 170.66667
+        height: 183.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c1181fffbf98a49b9cbd31d25991ec
+      internalID: 686987386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonAn4_2
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 815.2
+        width: 170.66667
+        height: 183.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d25d8f26f51e2434db0a159590c9e93a
+      internalID: -357437106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonAn4_3
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 815.2
+        width: 170.66667
+        height: 183.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe9515e6ba294e949982dde445289af7
+      internalID: 262845673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonAn4_4
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 815.2
+        width: 170.66667
+        height: 183.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea691b7c5cede4f479ba25bebe9fd334
+      internalID: 1910523275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonAn4_5
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 815.2
+        width: 170.66667
+        height: 183.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32d2db15db995443977f000c206ed65
+      internalID: -2129444008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonAn4_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 616.2
+        width: 170.66667
+        height: 183.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b45148d285f3564a93990bb0d85f248
+      internalID: -1150459651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonAn4_7
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 616.2
+        width: 170.66667
+        height: 183.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c332a68ac95794987aae139bf8dd27
+      internalID: 117175193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonAn4_8
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 616.2
+        width: 170.66667
+        height: 183.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee9d4127fd4351b4cb494574957433e5
+      internalID: -420279892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonAn4_9
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 616.2
+        width: 170.66667
+        height: 183.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afe10020b126b2045bf21db23668abaf
+      internalID: 1412271171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonAn4_10
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 616.2
+        width: 170.66667
+        height: 183.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e3d15ec062077489aab2db83919852
+      internalID: -1005659107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonAn4_11
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 616.2
+        width: 170.66667
+        height: 183.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da119e8d25ad7f648951dbf01d50ec00
+      internalID: -1711424822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonAn4_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 417.2
+        width: 170.66667
+        height: 183.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d1b9dc0aa321b409b1e3565aada6f4
+      internalID: -2003457606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonAn4_13
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 417.2
+        width: 170.66667
+        height: 183.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84dbf38b181d074498ce986399745e58
+      internalID: 797373685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonAn4_14
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 417.2
+        width: 170.66667
+        height: 183.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec6fd4ba21775104292c12961dab0204
+      internalID: 1296717855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonAn4_15
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 417.2
+        width: 170.66667
+        height: 183.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e11fae23b019d2c4d86e396744c2841a
+      internalID: 1052390800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonAn4_16
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 417.2
+        width: 170.66667
+        height: 183.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f97220038141b44a8161df1a3e4a75a
+      internalID: 1951544647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonAn4_17
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 417.2
+        width: 170.66667
+        height: 183.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 901cf0f6a1602004196053bcfeb92cb0
+      internalID: 524820069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonAn4_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 218.2
+        width: 170.66667
+        height: 183.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc8a15ed30793e41bbc52baed87e055
+      internalID: 244515057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonAn4_19
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 218.2
+        width: 170.66667
+        height: 183.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9b8a77b7e703d4a88931be5afaf673
+      internalID: -1668463148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonAn4_20
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 218.2
+        width: 170.66667
+        height: 183.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2223d637c3f130645902d1100fee6e1b
+      internalID: 1921767407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonAn4_21
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 218.2
+        width: 170.66667
+        height: 183.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aced0329677c3f64d9a4426054f2df39
+      internalID: 2079391008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonAn4_22
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 218.2
+        width: 170.66667
+        height: 183.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b079ec2ccedff4daeaa2a39daa2f8a
+      internalID: 4686175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonAn4_23
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 218.2
+        width: 170.66667
+        height: 183.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2339474119e67d34690e179f0b6c5b6b
+      internalID: 1860134533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonAn4_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 19.199997
+        width: 170.66667
+        height: 183.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6243ee022f712e04380ce2f6a913b07d
+      internalID: 633283385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonAn4_25
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 19.199997
+        width: 170.66667
+        height: 183.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4229344915499e747847ac61dc0274d6
+      internalID: 955769539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonAn4_26
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 19.199997
+        width: 170.66667
+        height: 183.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27bea4bc80976bf47ad5bd3885b1762b
+      internalID: 1373210497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonAn4_27
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 19.199997
+        width: 170.66667
+        height: 183.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7819eb8762920454c861b975dd5d2a63
+      internalID: -617820148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonAn4_28
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 19.199997
+        width: 170.66667
+        height: 183.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a132dfbfa49c4474faba2ab3fe4118e3
+      internalID: 262198980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonAn4_29
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 19.199997
+        width: 170.66667
+        height: 183.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d70b01abb35735e4cabf8bdb175f5ced
+      internalID: -1511287377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a866c4dd85e52184abb8f1b11ad87085
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      MonAn4_0: -339756911
+      MonAn4_1: 686987386
+      MonAn4_10: -1005659107
+      MonAn4_11: -1711424822
+      MonAn4_12: -2003457606
+      MonAn4_13: 797373685
+      MonAn4_14: 1296717855
+      MonAn4_15: 1052390800
+      MonAn4_16: 1951544647
+      MonAn4_17: 524820069
+      MonAn4_18: 244515057
+      MonAn4_19: -1668463148
+      MonAn4_2: -357437106
+      MonAn4_20: 1921767407
+      MonAn4_21: 2079391008
+      MonAn4_22: 4686175
+      MonAn4_23: 1860134533
+      MonAn4_24: 633283385
+      MonAn4_25: 955769539
+      MonAn4_26: 1373210497
+      MonAn4_27: -617820148
+      MonAn4_28: 262198980
+      MonAn4_29: -1511287377
+      MonAn4_3: 262845673
+      MonAn4_4: 1910523275
+      MonAn4_5: -2129444008
+      MonAn4_6: -1150459651
+      MonAn4_7: 117175193
+      MonAn4_8: -420279892
+      MonAn4_9: 1412271171
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

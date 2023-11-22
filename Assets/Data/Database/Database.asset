@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53d848f262f6d694b98ff5fb777832f1, type: 3}
+  m_Name: Database
+  m_EditorClassIdentifier: 
+  <ResourceTables>k__BackingField:
+    _serializedList:
+    - Key: Table
+      Value: {fileID: 11400000, guid: da8b3ef909a5ea94f8c1a76ea22d3d64, type: 2}
+    - Key: Hat
+      Value: {fileID: 11400000, guid: ced808b4808b8d54d821bc42409437a8, type: 2}

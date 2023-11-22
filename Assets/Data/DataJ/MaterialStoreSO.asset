@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b24d4a8b8f137cb4a85a98574d39ebda, type: 3}
+  m_Name: MaterialStoreSO
+  m_EditorClassIdentifier: 
+  _tabGroupName: note_tulanh_name
+  _tabItemObjects:
+  - TabName: 
+    TabIcon: {fileID: -1410364117, guid: d1d05561753ddd248a8e5cb7e5ffc56f, type: 3}
+    FoodSOs:
+    - {fileID: 11400000, guid: 3bfce4efa4b79e7488e253c50537d983, type: 2}
+    - {fileID: 11400000, guid: ce552ea9862d22447b581a7922925efb, type: 2}
+    - {fileID: 11400000, guid: 6e822712b7569d542a94672dc80c41d6, type: 2}
+    - {fileID: 11400000, guid: d2233eeda4516634f91082f320775482, type: 2}
+    - {fileID: 11400000, guid: 90adc6d4cb13c6b418a19789e956c94c, type: 2}
+    - {fileID: 11400000, guid: 0a52d797c2c5c6e4fb337532943308fc, type: 2}
+  - TabName: 
+    TabIcon: {fileID: 1973720363, guid: d1d05561753ddd248a8e5cb7e5ffc56f, type: 3}
+    FoodSOs:
+    - {fileID: 11400000, guid: 9fc27b5e04c7de445a4d0a3489f33880, type: 2}
+    - {fileID: 11400000, guid: 69469f93dc1721e4c940e15e45a0e6bb, type: 2}
+    - {fileID: 11400000, guid: 504c5a9dbd6be564d9da8046aea9677b, type: 2}
+    - {fileID: 11400000, guid: f70cf2ee03da77a44bccbc8862e6b9ed, type: 2}
+    - {fileID: 11400000, guid: d7e9f7dd591b3e74a95ececa54122950, type: 2}
+    - {fileID: 11400000, guid: 6678c5b6ff603654980a3f715a6d51f0, type: 2}
+    - {fileID: 11400000, guid: 8d098c261940adc4290d71d63273893b, type: 2}
+    - {fileID: 11400000, guid: fca357772d5afcd44ad8f2aa24423a67, type: 2}
+  - TabName: 
+    TabIcon: {fileID: 1670297601, guid: d1d05561753ddd248a8e5cb7e5ffc56f, type: 3}
+    FoodSOs:
+    - {fileID: 11400000, guid: 3b6da5b8e7d184144ab6ff48ca1dff0a, type: 2}
+    - {fileID: 11400000, guid: c40ea504929fce84fb7ada547203944b, type: 2}

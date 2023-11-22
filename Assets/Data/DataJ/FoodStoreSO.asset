@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b24d4a8b8f137cb4a85a98574d39ebda, type: 3}
+  m_Name: FoodStoreSO
+  m_EditorClassIdentifier: 
+  _tabGroupName: note_bep_name
+  _tabItemObjects:
+  - TabName: 
+    TabIcon: {fileID: 300341332, guid: d1d05561753ddd248a8e5cb7e5ffc56f, type: 3}
+    FoodSOs:
+    - {fileID: 11400000, guid: 9c363dee6f555a046b152e523881dbbe, type: 2}
+    - {fileID: 11400000, guid: 5a7ea72d5888ea6418d25b1d2a27fe0a, type: 2}
+    - {fileID: 11400000, guid: d6e0bc54bceae614fa477d0f2206e879, type: 2}
+    - {fileID: 11400000, guid: 4ed277c5d8bdfad498400aa946c2a1d9, type: 2}
+    - {fileID: 11400000, guid: 2da7861328c6d964f947d80a012ab47f, type: 2}
+    - {fileID: 11400000, guid: 9c94602454ebe93448b9a90079453b06, type: 2}
+    - {fileID: 11400000, guid: 3cd0fbec11655b844af728c70d39f703, type: 2}
+    - {fileID: 11400000, guid: 842d0c7bddb93fd49a1604e9507e7466, type: 2}

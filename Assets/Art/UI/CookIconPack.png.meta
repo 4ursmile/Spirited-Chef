@@ -1,0 +1,800 @@
+fileFormatVersion: 2
+guid: d1d05561753ddd248a8e5cb7e5ffc56f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CookIconPack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 773.8
+        width: 168.16667
+        height: 177.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4298c528a905104a92e17ca9bd7f5c5
+      internalID: -465341163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookIconPack_1
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 773.8
+        width: 168.16667
+        height: 177.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40aefb1fa3e8c0c40a58f98ba48e120f
+      internalID: 300341332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookIconPack_2
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 773.8
+        width: 168.16667
+        height: 177.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63afec451c83a4a4eb76b3f45de8936f
+      internalID: 705161148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookIconPack_3
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 773.8
+        width: 168.16667
+        height: 177.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14ec748a702d1e74c9c7dc01019a2fdc
+      internalID: -1957185450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookIconPack_4
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 773.8
+        width: 168.16667
+        height: 177.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be0add3eddca6a4a87918725282650e
+      internalID: -352013101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookIconPack_5
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 773.8
+        width: 168.16667
+        height: 177.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b47fec2f4788544aa8ffb75a25dbd31
+      internalID: -1488539402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookIconPack_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 583.8
+        width: 168.16667
+        height: 177.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ef8237f04382640a29bffb76c82e8b
+      internalID: 875672072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookIconPack_7
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 583.8
+        width: 168.16667
+        height: 177.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d3d1be4f3003f40b3918937f01ed7b
+      internalID: -1655820087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookIconPack_8
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 583.8
+        width: 168.16667
+        height: 177.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc9945e82bdfeb74585cd9ba7f21f13f
+      internalID: -1796871936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookIconPack_9
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 583.8
+        width: 168.16667
+        height: 177.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2619eca898c70e04bac9701d3e431a01
+      internalID: -33202129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookIconPack_10
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 583.8
+        width: 168.16667
+        height: 177.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d245ed223177f2469090b076199b40f
+      internalID: 1258761007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookIconPack_11
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 583.8
+        width: 168.16667
+        height: 177.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27fde005ee5e6d24cb58ee329fc2c1a3
+      internalID: 1219112369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookIconPack_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 393.8
+        width: 168.16667
+        height: 177.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 143105da6c8194c4a8ae4ff00408fa2c
+      internalID: 1670297601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookIconPack_13
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 393.8
+        width: 168.16667
+        height: 177.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daea6b93bedffa3418dc6c0f4d50afd7
+      internalID: -1410364117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookIconPack_14
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 393.8
+        width: 168.16667
+        height: 177.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a496d99d2145a60469c1ce9940af18f1
+      internalID: -1448210358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookIconPack_15
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 393.8
+        width: 168.16667
+        height: 177.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f24d6ad0a5bd994885876b74e3e1afd
+      internalID: 1726892434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookIconPack_16
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 393.8
+        width: 168.16667
+        height: 177.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18241ba1df999a144bd96b3b1c5ac5a4
+      internalID: -146847883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookIconPack_17
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 393.8
+        width: 168.16667
+        height: 177.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a594c32d772b9458709cf4cf36fd16
+      internalID: 1576527657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookIconPack_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 203.8
+        width: 168.16667
+        height: 177.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa07cad92c367484b8c84f15a4079230
+      internalID: -1394730587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookIconPack_19
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 203.8
+        width: 168.16667
+        height: 177.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1859668bcf79d9e468a15b89421a2d68
+      internalID: 1757952347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookIconPack_20
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 203.8
+        width: 168.16667
+        height: 177.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94be35387743d8e48a65500916657be4
+      internalID: 1973720363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookIconPack_21
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 203.8
+        width: 168.16667
+        height: 177.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64bc01136dd12f742bc351e1d5108b80
+      internalID: -648218081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookIconPack_22
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 203.8
+        width: 168.16667
+        height: 177.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bcb60c1d704abb41b0b52ebe21f03b0
+      internalID: 789156374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookIconPack_23
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 203.8
+        width: 168.16667
+        height: 177.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c3bf316bafd4244bd1e8031344a7a1
+      internalID: 1843632622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookIconPack_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 13.800003
+        width: 168.16667
+        height: 177.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c4925a13dab1e4b9d0b5ce824fcd07
+      internalID: 356328815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookIconPack_25
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 13.800003
+        width: 168.16667
+        height: 177.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0953f806ee62e47ab7c245c598a279
+      internalID: -672486779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookIconPack_26
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 13.800003
+        width: 168.16667
+        height: 177.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8be01d458d52b3b4ab1b47f546abf1b9
+      internalID: 167374998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookIconPack_27
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 13.800003
+        width: 168.16667
+        height: 177.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c2fc32bac69e54ea5c66b4c6c49ba5
+      internalID: -544477612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookIconPack_28
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 13.800003
+        width: 168.16667
+        height: 177.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00624cb8ea39e3149ab4a9ff85b16a3e
+      internalID: -288155989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookIconPack_29
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 13.800003
+        width: 168.16667
+        height: 177.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1587b1be5192b2344a8291824f8440f9
+      internalID: 101071656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      CookIconPack_0: -465341163
+      CookIconPack_1: 300341332
+      CookIconPack_10: 1258761007
+      CookIconPack_11: 1219112369
+      CookIconPack_12: 1670297601
+      CookIconPack_13: -1410364117
+      CookIconPack_14: -1448210358
+      CookIconPack_15: 1726892434
+      CookIconPack_16: -146847883
+      CookIconPack_17: 1576527657
+      CookIconPack_18: -1394730587
+      CookIconPack_19: 1757952347
+      CookIconPack_2: 705161148
+      CookIconPack_20: 1973720363
+      CookIconPack_21: -648218081
+      CookIconPack_22: 789156374
+      CookIconPack_23: 1843632622
+      CookIconPack_24: 356328815
+      CookIconPack_25: -672486779
+      CookIconPack_26: 167374998
+      CookIconPack_27: -544477612
+      CookIconPack_28: -288155989
+      CookIconPack_29: 101071656
+      CookIconPack_3: -1957185450
+      CookIconPack_4: -352013101
+      CookIconPack_5: -1488539402
+      CookIconPack_6: 875672072
+      CookIconPack_7: -1655820087
+      CookIconPack_8: -1796871936
+      CookIconPack_9: -33202129
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

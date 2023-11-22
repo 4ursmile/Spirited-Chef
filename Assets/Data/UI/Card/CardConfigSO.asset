@@ -1,0 +1,143 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7400bf09c996f7a4bb1d589fe63577d2, type: 3}
+  m_Name: CardConfigSO
+  m_EditorClassIdentifier: 
+  <CardBack>k__BackingField: {fileID: 21300000, guid: 7e859d0fe2c383e44bd638895e311ce8, type: 3}
+  <WaitingCardOpenTimes>k__BackingField:
+    _serializedList:
+    - Key: 0
+      Value: 0
+    - Key: 1
+      Value: 0.4
+    - Key: 2
+      Value: 0.6
+  <CardDelayTimes>k__BackingField:
+    _serializedList:
+    - Key: 0
+      Value: 0.2
+    - Key: 1
+      Value: 0.6
+    - Key: 2
+      Value: 0.4
+  <CardOpenTimes>k__BackingField:
+    _serializedList:
+    - Key: 0
+      Value: 0.3
+    - Key: 1
+      Value: 0.4
+    - Key: 2
+      Value: 0.3
+  <CardSeletedShowTimes>k__BackingField:
+    _serializedList:
+    - Key: 0
+      Value: 1
+    - Key: 1
+      Value: 1.5
+    - Key: 2
+      Value: 2
+  <CardSelectSounds>k__BackingField:
+    _serializedList:
+    - Key: 0
+      Value: {fileID: 8300000, guid: 2bc39d753a5a82940abe8619591d2ca4, type: 3}
+    - Key: 1
+      Value: {fileID: 8300000, guid: 2bc39d753a5a82940abe8619591d2ca4, type: 3}
+    - Key: 2
+      Value: {fileID: 8300000, guid: 2bc39d753a5a82940abe8619591d2ca4, type: 3}
+  <CardDisplaySounds>k__BackingField:
+    _serializedList:
+    - Key: 0
+      Value: {fileID: 8300000, guid: 5ccf55677d321f841b75551dde609d56, type: 3}
+    - Key: 1
+      Value: {fileID: 8300000, guid: 2bc39d753a5a82940abe8619591d2ca4, type: 3}
+    - Key: 2
+      Value: {fileID: 8300000, guid: c8c9575c66642c0428e62fdb87f84afa, type: 3}
+  <CardOpenSounds>k__BackingField:
+    _serializedList:
+    - Key: 0
+      Value: {fileID: 8300000, guid: f796452522718c6449c8e5bed9ff631a, type: 3}
+    - Key: 1
+      Value: {fileID: 8300000, guid: f796452522718c6449c8e5bed9ff631a, type: 3}
+    - Key: 2
+      Value: {fileID: 8300000, guid: f796452522718c6449c8e5bed9ff631a, type: 3}
+  <CardCloseSounds>k__BackingField:
+    _serializedList:
+    - Key: 0
+      Value: {fileID: 8300000, guid: 0fb86f88ab8476045bb2772f3da402ca, type: 3}
+    - Key: 1
+      Value: {fileID: 8300000, guid: 0fb86f88ab8476045bb2772f3da402ca, type: 3}
+    - Key: 2
+      Value: {fileID: 8300000, guid: 0fb86f88ab8476045bb2772f3da402ca, type: 3}
+  Borders:
+    _serializedList:
+    - Key: 0
+      Value: {fileID: 1432056369, guid: 02cd5ff16078a2c4a8af9f2179f37f76, type: 3}
+    - Key: 1
+      Value: {fileID: 888797116, guid: 02cd5ff16078a2c4a8af9f2179f37f76, type: 3}
+    - Key: 2
+      Value: {fileID: -1370919978, guid: 02cd5ff16078a2c4a8af9f2179f37f76, type: 3}
+  Gems:
+    _serializedList:
+    - Key: 0
+      Value: {fileID: -247248310, guid: 02cd5ff16078a2c4a8af9f2179f37f76, type: 3}
+    - Key: 1
+      Value: {fileID: 1516337960, guid: 02cd5ff16078a2c4a8af9f2179f37f76, type: 3}
+    - Key: 2
+      Value: {fileID: 1419103791, guid: 02cd5ff16078a2c4a8af9f2179f37f76, type: 3}
+  ColorBacks:
+    _serializedList:
+    - Key: 0
+      Value: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 1}
+    - Key: 1
+      Value: {r: 0.07775008, g: 0.2264151, b: 0.091687426, a: 1}
+    - Key: 2
+      Value: {r: 0.08746884, g: 0.10648738, b: 0.254717, a: 1}
+  ColorDoorTops:
+    _serializedList:
+    - Key: 0
+      Value: {r: 0.8867924, g: 0.8867924, b: 0.8867924, a: 1}
+    - Key: 1
+      Value: {r: 0.8301887, g: 0.7909081, b: 0.71584195, a: 1}
+    - Key: 2
+      Value: {r: 0.7923396, g: 0.47931647, b: 0.9339623, a: 1}
+  ColorDoorBottomLefts:
+    _serializedList:
+    - Key: 0
+      Value: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 1}
+    - Key: 1
+      Value: {r: 0.49056602, g: 0.43624857, b: 0.13606264, a: 1}
+    - Key: 2
+      Value: {r: 0.2814258, g: 0.07705588, b: 0.3490566, a: 1}
+  ColorDoorBottomRights:
+    _serializedList:
+    - Key: 0
+      Value: {r: 0.8018868, g: 0.8018868, b: 0.8018868, a: 1}
+    - Key: 1
+      Value: {r: 0.7264151, g: 0.6650236, b: 0.5098612, a: 1}
+    - Key: 2
+      Value: {r: 0.6755214, g: 0.45589182, b: 0.7169812, a: 1}
+  ColorBadges:
+    _serializedList:
+    - Key: 0
+      Value: {r: 1, g: 1, b: 1, a: 1}
+    - Key: 1
+      Value: {r: 1, g: 1, b: 1, a: 1}
+    - Key: 2
+      Value: {r: 1, g: 1, b: 1, a: 1}
+  ColorPanels:
+    _serializedList:
+    - Key: 0
+      Value: {r: 0.1509434, g: 0.14866501, b: 0.14866501, a: 0.8666667}
+    - Key: 1
+      Value: {r: 0.33962262, g: 0.2499528, b: 0.09740119, a: 0.9098039}
+    - Key: 2
+      Value: {r: 0.13025483, g: 0.02096831, b: 0.1792453, a: 0.9529412}

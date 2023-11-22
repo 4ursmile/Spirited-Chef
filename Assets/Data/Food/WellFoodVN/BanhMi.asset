@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093215734b61b9242bd14143940490f1, type: 3}
+  m_Name: BanhMi
+  m_EditorClassIdentifier: 
+  _nameID: food_name_6
+  _descriptionID: food_dess_6
+  _icon: {fileID: 1951544647, guid: 4e8fd47607dfb6c4ba161e44d345afbb, type: 3}
+  _iconScale: 1
+  _price: 1500
+  _level: 0
+  _calorie: 0
+  _timeToPrepare: 0
+  _isUnlocked: 0
+  <NeedToWash>k__BackingField: 0
+  <Intergients>k__BackingField:
+  - {fileID: 11400000, guid: ca013c8f82efdfe4f84df05db0c402bf, type: 2}
+  - {fileID: 11400000, guid: cd481ff33de0b9c4ca08433a79e8f490, type: 2}
+  - {fileID: 11400000, guid: fca357772d5afcd44ad8f2aa24423a67, type: 2}
+  - {fileID: 11400000, guid: 9efd6a74d6e095447a3551a1bdeb39f1, type: 2}

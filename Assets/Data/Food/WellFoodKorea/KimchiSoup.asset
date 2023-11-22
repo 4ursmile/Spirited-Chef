@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093215734b61b9242bd14143940490f1, type: 3}
+  m_Name: KimchiSoup
+  m_EditorClassIdentifier: 
+  _nameID: food_name_12
+  _descriptionID: food_des_12
+  _icon: {fileID: 82732345, guid: 0206651dc17152046b19f6da83b46543, type: 3}
+  _iconScale: 1
+  _price: 3000
+  _level: 0
+  _calorie: 0
+  _timeToPrepare: 0
+  _isUnlocked: 0
+  <NeedToWash>k__BackingField: 0
+  <Intergients>k__BackingField:
+  - {fileID: 11400000, guid: 5c95bea677738ed4f806aa246229665e, type: 2}
+  - {fileID: 11400000, guid: ce552ea9862d22447b581a7922925efb, type: 2}
+  - {fileID: 11400000, guid: 738fc62eb9ecf4f46907e007c01cd3bd, type: 2}
+  - {fileID: 11400000, guid: dcd9c37c9c3d44f44bcd365d8a2ffb10, type: 2}
+  - {fileID: 11400000, guid: d47b7de21ce7c9b46b3aec610d2d7bc8, type: 2}

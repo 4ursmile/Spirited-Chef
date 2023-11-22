@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66504f9b058746a41b86fff4754a7a0c, type: 3}
+  m_Name: ThitBo
+  m_EditorClassIdentifier: 
+  _nameID: material_name_2
+  _descriptionID: material_des_2
+  _icon: {fileID: -943878883, guid: c19c7d289fd44f641a0c3d09da3e2fe3, type: 3}
+  _iconScale: 1
+  _price: 1000
+  _level: 0
+  _calorie: 270
+  _timeToPrepare: 4
+  _isUnlocked: 0
+  <NeedToWash>k__BackingField: 1
+  <Type>k__BackingField: 1
+  <WashTime>k__BackingField: 3
+  <ForwardsMaterial>k__BackingField:
+  - {fileID: 11400000, guid: 24c1b5fcd738e694ab6d77911bc8c1c4, type: 2}
+  - {fileID: 11400000, guid: d41cd36cd786c3d4e92f1643cf5ab6b5, type: 2}

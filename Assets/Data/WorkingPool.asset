@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 392b34912c2c2214ca43270d896162ad, type: 3}
+  m_Name: WorkingPool
+  m_EditorClassIdentifier: 
+  _initSize: 5
+  _maxSize: 5
+  _particleSystem: {fileID: 4066917878231044951, guid: 1f66e7d19f75fb64e8ba38e96c3b9fd4, type: 3}
+  _audioClip: {fileID: 0}
+  _makeSound: 0
+  _oneShotSound: 0
+  _volume: 0.5
+  ScaleMultiplier: 2

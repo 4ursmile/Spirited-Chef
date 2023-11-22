@@ -1,0 +1,800 @@
+fileFormatVersion: 2
+guid: def0d0f53a595c747a8224776cb07e98
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dam_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 818.4
+        width: 169
+        height: 184.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b756e1beb3f72524c884d6b718251d60
+      internalID: 629373017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dam_1
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 818.4
+        width: 169
+        height: 184.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e727b918d96c1348a9f09cfedafe5b6
+      internalID: -450199397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dam_2
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 818.4
+        width: 169
+        height: 184.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba422301ec189b8469c13e0e9b2e6ac0
+      internalID: -1233313786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dam_3
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 818.4
+        width: 169
+        height: 184.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18843e8026d1ae14393b4125cd67984c
+      internalID: 373368876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dam_4
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 818.4
+        width: 169
+        height: 184.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 806b032da1e1ac74b87878401e653c00
+      internalID: 1081142572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dam_5
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 818.4
+        width: 169
+        height: 184.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244091562327d9c44b5b466081824ecc
+      internalID: -1082877228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dam_6
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 618.4
+        width: 169
+        height: 184.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a8e16dbd5c3fa8499a6d80f394de79e
+      internalID: 652911836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dam_7
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 618.4
+        width: 169
+        height: 184.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ca5877acacb0b4f86bd5549b04bc04
+      internalID: -26885523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dam_8
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 618.4
+        width: 169
+        height: 184.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e45964f793a430e4796fe73f45b700df
+      internalID: 659149008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dam_9
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 618.4
+        width: 169
+        height: 184.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb27567716c093742894d603197f7ed5
+      internalID: -1934706919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dam_10
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 618.4
+        width: 169
+        height: 184.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e26c5cc950bb94b8497f677c4f9091
+      internalID: 991441939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dam_11
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 618.4
+        width: 169
+        height: 184.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e00ca11478edc3b40b7b94866a89829e
+      internalID: -1472620337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dam_12
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 418.4
+        width: 169
+        height: 184.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d7a974d91782b4fb8ec444bab53c04
+      internalID: -992768779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dam_13
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 418.4
+        width: 169
+        height: 184.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f9b0f916ba21904fb940b0c3f20cb8e
+      internalID: 69859843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dam_14
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 418.4
+        width: 169
+        height: 184.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e4cfbb631562c4b8a9f16e84b84c2b
+      internalID: -2032183155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dam_15
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 418.4
+        width: 169
+        height: 184.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5476df1affe82240bc09bff6a67d6f5
+      internalID: 684314032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dam_16
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 418.4
+        width: 169
+        height: 184.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d824e9c4b0ca8a418e6d1cd674bb17b
+      internalID: -369816746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dam_17
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 418.4
+        width: 169
+        height: 184.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7774f617926c464d911de340720bfe1
+      internalID: -603379094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dam_18
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 218.4
+        width: 169
+        height: 184.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb2e569cab776a42a83917c996add34
+      internalID: 154839942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dam_19
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 218.4
+        width: 169
+        height: 184.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38184845d6fb724c9d6d48ff12c85fa
+      internalID: -732032491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dam_20
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 218.4
+        width: 169
+        height: 184.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d6307295957b43469fc847a4fe16bd8
+      internalID: -1479912636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dam_21
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 218.4
+        width: 169
+        height: 184.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96a28dfc6e1478f4d93ec150ab50ea0e
+      internalID: -497735496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dam_22
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 218.4
+        width: 169
+        height: 184.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b7987a5b552d0f46a5946184126a09f
+      internalID: 1732002913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dam_23
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 218.4
+        width: 169
+        height: 184.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19717d935b0db11468ee518d6d06560e
+      internalID: 1192883616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dam_24
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 18.399994
+        width: 169
+        height: 184.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dbc77e8b2dddb945a570af3835f5170
+      internalID: -1428685700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dam_25
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 18.399994
+        width: 169
+        height: 184.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80004a10f978e75499752007d206f85c
+      internalID: -668956857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dam_26
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 18.399994
+        width: 169
+        height: 184.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6975805c59f48049a3edb52796780a2
+      internalID: 1974638597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dam_27
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 18.399994
+        width: 169
+        height: 184.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2970736570ff784cbb0b708e3ed3049
+      internalID: 238441960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dam_28
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 18.399994
+        width: 169
+        height: 184.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56135af36fb92164ab6fdcd27f7fd63a
+      internalID: 287911018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dam_29
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 18.399994
+        width: 169
+        height: 184.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f885900419a9b40b51342458e7f4d3
+      internalID: 636228427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c6caf8eb590de1b4e8b82a98d933e8b0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Dam_0: 629373017
+      Dam_1: -450199397
+      Dam_10: 991441939
+      Dam_11: -1472620337
+      Dam_12: -992768779
+      Dam_13: 69859843
+      Dam_14: -2032183155
+      Dam_15: 684314032
+      Dam_16: -369816746
+      Dam_17: -603379094
+      Dam_18: 154839942
+      Dam_19: -732032491
+      Dam_2: -1233313786
+      Dam_20: -1479912636
+      Dam_21: -497735496
+      Dam_22: 1732002913
+      Dam_23: 1192883616
+      Dam_24: -1428685700
+      Dam_25: -668956857
+      Dam_26: 1974638597
+      Dam_27: 238441960
+      Dam_28: 287911018
+      Dam_29: 636228427
+      Dam_3: 373368876
+      Dam_4: 1081142572
+      Dam_5: -1082877228
+      Dam_6: 652911836
+      Dam_7: -26885523
+      Dam_8: 659149008
+      Dam_9: -1934706919
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

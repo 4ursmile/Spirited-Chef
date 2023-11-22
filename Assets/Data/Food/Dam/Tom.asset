@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66504f9b058746a41b86fff4754a7a0c, type: 3}
+  m_Name: Tom
+  m_EditorClassIdentifier: 
+  _nameID: material_name_4
+  _descriptionID: material_des_4
+  _icon: {fileID: -369816746, guid: def0d0f53a595c747a8224776cb07e98, type: 3}
+  _iconScale: 1
+  _price: 800
+  _level: 0
+  _calorie: 270
+  _timeToPrepare: 5
+  _isUnlocked: 0
+  <NeedToWash>k__BackingField: 1
+  <Type>k__BackingField: 1
+  <WashTime>k__BackingField: 4
+  <ForwardsMaterial>k__BackingField:
+  - {fileID: 11400000, guid: 8e38e75fc03a6964e8691601bf33f179, type: 2}

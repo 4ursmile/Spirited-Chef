@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b24d4a8b8f137cb4a85a98574d39ebda, type: 3}
+  m_Name: SpiceStoreSO
+  m_EditorClassIdentifier: 
+  _tabGroupName: note_tugiavi_name
+  _tabItemObjects:
+  - TabName: 
+    TabIcon: {fileID: -1488539402, guid: d1d05561753ddd248a8e5cb7e5ffc56f, type: 3}
+    FoodSOs:
+    - {fileID: 11400000, guid: 537018d5f5d5f214cae378349b745f48, type: 2}
+    - {fileID: 11400000, guid: 344e53995178e874d8a485412e1e9d95, type: 2}
+    - {fileID: 11400000, guid: dcba350c600f75a4fa889fa056c13e51, type: 2}
+    - {fileID: 11400000, guid: b70b45b887f40f347a5eabb788a30e57, type: 2}
+    - {fileID: 11400000, guid: b04ff5e023d57834db0297e21d8c36b8, type: 2}
+    - {fileID: 11400000, guid: 9efd6a74d6e095447a3551a1bdeb39f1, type: 2}
+    - {fileID: 11400000, guid: d47b7de21ce7c9b46b3aec610d2d7bc8, type: 2}
+    - {fileID: 11400000, guid: c08eba0196c34c34f9544a4d239d8da2, type: 2}
+    - {fileID: 11400000, guid: 02cf5f056ca6b9642a8d3905a9fd07bf, type: 2}
