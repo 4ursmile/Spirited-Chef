@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: BanhMi
   m_EditorClassIdentifier: 
   _nameID: food_name_6
-  _descriptionID: food_dess_6
+  _descriptionID: food_des_6
   _icon: {fileID: 1951544647, guid: 4e8fd47607dfb6c4ba161e44d345afbb, type: 3}
   _iconScale: 1
   _price: 1500
   _level: 0
-  _calorie: 0
-  _timeToPrepare: 0
+  _calorie: 500
+  _timeToPrepare: 5
   _isUnlocked: 0
   <NeedToWash>k__BackingField: 0
   <Intergients>k__BackingField:

@@ -8,7 +8,9 @@ public class Database : SingleTon<Database>
 {
     [SerializeField] private DatabseResourcePathSO _resourcePath;
     [SerializeField] private EmbeddDatabaseSO _embeddDatabase;
+    [SerializeField] private EmojiDataSO _emojiData;
     public DatabseResourcePathSO ResourcePath => _resourcePath;
+    public EmojiDataSO EmojiData => _emojiData;
     /// <summary>
     /// Get Table in database
     /// Remember to use this method to get table
@@ -23,7 +25,8 @@ public class Database : SingleTon<Database>
     public void AddTable(string key, TableResourcePathSO value) => Instance.ResourcePath.AddTable(key, value);
     public void RemoveTable(string key) => Instance.ResourcePath.RemoveTable(key);
     public void UpdateTable(string key, TableResourcePathSO value) => Instance.ResourcePath.UpdateTable(key, value);
-
+    public static Sprite GetEmoji(string key) => Instance.EmojiData.Get(key);
+    public static Sprite GetEmoji() => Instance.EmojiData.GetRandom();
     public static EmbeddDatabaseSO Embedded => Instance._embeddDatabase;  
     public static float Score(string key, string key2) => Instance._embeddDatabase.Score(key, key2);
     public static List<float> QueryEmbedd(string key) => Instance._embeddDatabase.QueryEmbedd(key);

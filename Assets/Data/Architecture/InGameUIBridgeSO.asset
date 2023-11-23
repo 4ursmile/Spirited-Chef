@@ -25,3 +25,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bde291110c0048e4ea21c9f70ab6124c, type: 2}
   _soundManagerSO: {fileID: 11400000, guid: ce56ddbfeb6c79d46943c748a3714c3e, type: 2}
   _intergridientUI: {fileID: 1356680766367959488, guid: b0eac4101cac27b4aa25f4c27517d501, type: 3}
+  _emojiBehaviourPrefab: {fileID: 1250513460260368931, guid: ee3ca2e298e9af44dad4643811f8cfe3, type: 3}
+  _emojiPoolSize: 5

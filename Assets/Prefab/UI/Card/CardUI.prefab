@@ -544,8 +544,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f54c7466a0b4b6a4f9ee3b86eca53f51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _appearSound: {fileID: 0}
-  _disappearSound: {fileID: 0}
+  _appearSound: {fileID: 8300000, guid: 5ccf55677d321f841b75551dde609d56, type: 3}
+  _disappearSound: {fileID: 8300000, guid: 2bc39d753a5a82940abe8619591d2ca4, type: 3}
   _duration: 0.3
   _ease: 8
   _onAppear:
@@ -570,6 +570,7 @@ MonoBehaviour:
   _animationTime: 0.5
   _cardRollDeltaTime: 0.3
   _cardManagerSO: {fileID: 11400000, guid: 1a8bfb1210128794ba89353cc737fb87, type: 2}
+  _inGameUIBridgeSO: {fileID: 11400000, guid: 7e4374be52fba714a9234da27709481b, type: 2}
   _easeType: 25
 --- !u!1001 &2406519774845865447
 PrefabInstance:
@@ -692,6 +693,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3806346870588753421}
     m_Modifications:
+    - target: {fileID: 182058092568799503, guid: 7a98f33c9ace1934ab8570e65e6630b3, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 182058092568799503, guid: 7a98f33c9ace1934ab8570e65e6630b3, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 182058092568799503, guid: 7a98f33c9ace1934ab8570e65e6630b3, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7909198148371484097, guid: 7a98f33c9ace1934ab8570e65e6630b3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

@@ -25,62 +25,40 @@ namespace ObjectS
             {
                 return false;
             }
-            if (controllerS.CurrentHoldFood == null && controllerS.CurrentHoldObject == null) 
+            if (controllerS.CurrentHoldFood == null) 
             {
                 _inGameUIBridgeSO.SetWarningText("mess_available", transform.position);
                 return false;
             }
             return base.Interact(controllerS, gameController);
         }
-        public override void PerformInteraction(GameController gameController)
+        public override void PerformInteraction(CharacterControllerS controllerS, GameController gameController)
         {
-
-            _currentController?.ChangeState(_currentController.IdleState);
-            if (_requireFocus && gameController.IsFocused)
-                return;
-            if (_currentController == null)
-                return;
+            base.PerformInteraction(controllerS, gameController);
             if (_currentController.CurrentHoldFood != null)
             {
-                var food = _currentController.CurrentHoldFood;
-                var foodObject = food.IngameFoodInstance;
+                var foodObject = _currentController.CurrentHoldFood;
                 foodObject.UnSetTarget();
+                _currentController.RemoveHoldFood();
+                _currentController.RemoveCurrentTarget();
+                var food = foodObject.FoodSO;
                 var seq = DOTween.Sequence();
                 seq.Append(
                     foodObject.transform.DOJump(transform.position + _throwOffset, _throwHeight, 1, _throwDuration).SetEase(_throwEase)
                 );
                 seq.Insert(_doorDelay, _door.transform.DOLocalRotate(new Vector3(0, _doorAngle, 0), _doorDuration/2).SetEase(_throwEase));
                 seq.Insert(_doorDelay + _doorDuration/2, _door.transform.DOLocalRotate(new Vector3(0, 0,0), _doorDuration/2).SetEase(_throwEase));
-                seq.Play().onComplete += () => {
-                    UniversalObjectInstance.Instance.ChangeMoney(food.Price/5, _currentController.transform.position, 0.2f);
-                    Destroy(foodObject.FoodSO);
-                    Destroy(foodObject.gameObject);
-                    _currentController.RemoveHoldFood();
-                    _currentController.RemoveCurrentTarget();
-                };
+                seq.Play().OnComplete(() => {
+                    int price = (int)((food.Price/5)*UniversalObjectInstance.Instance.IncomeReceiveMultiplier);
+                    UniversalObjectInstance.Instance.ChangeMoney(price, _currentController.transform.position, 0.2f);
+                    foodObject.Destroy();
+                });
+                    
+
                 _soundManagerSO.Play(_onPerformClip);
                 return;
                 
             }
-             if (_currentController.CurrentHoldObject != null)
-            {
-                var foodObject = _currentController.CurrentHoldObject;
-                _currentController.RemoveHoldSomething();
-
-                var seq = DOTween.Sequence();
-                seq.Append(
-                    foodObject.transform.DOJump(transform.position + _throwOffset, _throwHeight, 1, _throwDuration).SetEase(_throwEase)
-                );
-                seq.Insert(_doorDelay, _door.transform.DOLocalRotate(new Vector3(0, _doorAngle, 0), _doorDuration/2).SetEase(_throwEase));
-                seq.Insert(_doorDelay + _doorDuration/2, _door.transform.DOLocalRotate(new Vector3(0, 0,0), _doorDuration/2).SetEase(_throwEase));
-                seq.Play().onComplete += () => {
-                    Destroy(foodObject.gameObject);
-                    UniversalObjectInstance.Instance.ChangeMoney(10, _currentController.transform.position, 0.2f);
-                    _currentController.RemoveCurrentTarget();
-                };
-                return;
-            }
-
         }
 
     }

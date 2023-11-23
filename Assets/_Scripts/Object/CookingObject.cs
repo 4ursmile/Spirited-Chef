@@ -16,8 +16,6 @@ namespace ObjectS
         [SerializeField] private GameObject _noi;
         [SerializeField] private AudioClip _cookDone;
         [SerializeField] private AudioClip _takeFood;
-        [SerializeField] private IntergridientUI _intergridientUIPRefab;
-        private GameController _gameController;
         private CookerState _cookerState = CookerState.Free;
         private WellFoodSO _wellFoodSO;
         private List<BaseFoodSO> _listFoodSO = new List<BaseFoodSO>();
@@ -28,7 +26,6 @@ namespace ObjectS
             {
                 return false;
             }
-            _gameController = gameController;
             if (_cookerState == CookerState.Waiting)
             {
                 if (controllerS.CurrentHoldFood == null) 
@@ -36,18 +33,18 @@ namespace ObjectS
                     _inGameUIBridgeSO.SetWarningText("mess_notsuitable", transform.position);
                     return false;
                 }
-                if (_listFoodSO.Contains(controllerS.CurrentHoldFood) == false)
+                if (_listFoodSO.Contains(controllerS.CurrentHoldFood.FoodSO) == false)
                 {
                     _inGameUIBridgeSO.SetWarningText("mess_notsuitable", transform.position);
                     return false;
                 }
-                var materialSO = controllerS.CurrentHoldFood as MaterialSO;
+                var materialSO = controllerS.CurrentHoldFood.FoodSO as MaterialSO;
                 if (materialSO == null)
                 {
                     _inGameUIBridgeSO.SetWarningText("mess_food", transform.position);
                     return false;
                 }
-                if (materialSO.NeedToWash)
+                if (controllerS.CurrentHoldFood.NeedToWash)
                 {
                     _inGameUIBridgeSO.SetWarningText("mess_wash", transform.position);
                     return false;
@@ -72,16 +69,14 @@ namespace ObjectS
             _particleSystem.Stop();
             _noi.SetActive(false);
         }
-        public override void PerformInteraction(GameController gameController)
+        public override void PerformInteraction(CharacterControllerS controller, GameController gameController)
         {
-            _currentController.ChangeState(_currentController.IdleState);
-            if (_currentController == null)
-                return;
             if (gameController.IsFocused)
             {
-                _currentController.RemoveCurrentTarget();
+                controller.RemoveCurrentTarget();
                 return;
             }
+            base.PerformInteraction(controller, gameController);
             if (_cookerState == CookerState.Free)
             {
                 gameController.RequireFocussing(_currentController);
@@ -92,22 +87,22 @@ namespace ObjectS
             {
                 if (_currentController.CurrentHoldFood == null)
                     return;
-                var index = _listFoodSO.IndexOf(_currentController.CurrentHoldFood);
+                var index = _listFoodSO.IndexOf(_currentController.CurrentHoldFood.FoodSO);
                 if (index == -1)
                     return;
-                Debug.Log("Remove " + _currentController.CurrentHoldFood.name);
                 _listFoodSO.RemoveAt(index);
                 _intergridientUI.RemoveItemAt(index);
-                var foodObject = _currentController.CurrentHoldFood.IngameFoodInstance;
-                Destroy(foodObject.FoodSO);
-                Destroy(foodObject.gameObject);
+                var foodObject = _currentController.CurrentHoldFood;
+                foodObject.UnSetTarget();
+                foodObject.Destroy();
                 _currentController.RemoveHoldFood();
                 if (_listFoodSO.Count == 0)
                 {
                     _cookerState = CookerState.Cooking;
                     _particleSystem.Play();
                     _available = false;
-                    Destroy(_intergridientUI.gameObject);
+                    _inGameUIBridgeSO.ReleaseIntergridientUI(_intergridientUI);
+                    _intergridientUI = null;
                     ProcessingFood(_wellFoodSO);
                 }
                 return;
@@ -124,6 +119,12 @@ namespace ObjectS
                 _cookerState = CookerState.Free;
                 _available = true;
                 _soundManagerSO.Play(_takeFood);
+                if (_intergridientUI != null)
+                {
+                    _intergridientUI.RemoveItemAt(0);
+                    _inGameUIBridgeSO.ReleaseIntergridientUI(_intergridientUI);
+                    _intergridientUI = null;
+                }
                 return;
             }
 
@@ -137,8 +138,7 @@ namespace ObjectS
                 _wellFoodSO = food as WellFoodSO;
                 _cookerState = CookerState.Waiting;
                 _listFoodSO = new List<BaseFoodSO>(_wellFoodSO.Intergients);
-                
-                _intergridientUI = Instantiate(_intergridientUIPRefab, _inGameUIBridgeSO.transform);
+                _intergridientUI = _inGameUIBridgeSO.GetIntergridientUI();
                 _intergridientUI.SetRecipe(_listFoodSO, transform.position);
                 _noi.SetActive(true);
             }
@@ -146,21 +146,15 @@ namespace ObjectS
         }
         public async void ProcessingFood(BaseFoodSO food)
         {
-            bool isNew;
-            var source = _soundManagerSO.RentAudioSource(out isNew);
-            source.clip = _onPerformClip;
-            source.loop = true;
-            source.Play();
+            _soundManagerSO.RentAudioSource(_onPerformClip, food.TimeToPrepare);
+
             _inGameUIBridgeSO.SetCounter(food.TimeToPrepare, transform.position+ Vector3.up*3);
-            await UniTask.WaitForSeconds(food.TimeToPrepare);
-            source.Stop();
-            if (isNew)
-                Destroy(source.gameObject);
-            else
-                _soundManagerSO.ReleaseAudioSource(source);
+            await UniTask.WaitForSeconds(food.TimeToPrepare*UniversalObjectInstance.Instance.TimePrepareMultiplier);
             _available = true;
             _particleSystem.Stop();
             _soundManagerSO.Play(_cookDone);
+            _intergridientUI = _inGameUIBridgeSO.GetIntergridientUI();
+            _intergridientUI.SetRecipe(_wellFoodSO, transform.position);
             _cookerState = CookerState.Done;
         }
     }

@@ -26,11 +26,15 @@ namespace Data
         }
         public List<float> QueryEmbedd(string key)
         {
+            if (!_jObject.ContainsKey(key))
+                return null;
             List<float> result = _jObject[key];
             return result;
         }
         public float Score (string key, string key2)
         {
+            if (!_jObject.ContainsKey(key) || !_jObject.ContainsKey(key2))
+                return 0;
             var vec1 = _jObject[key];
             var vec2 = _jObject[key2];
             float cosinSim = vec1.CosineSim(vec2);

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7cec7da639358240a05b49701c1d5a3, type: 3}
+  m_Name: Card3
+  m_EditorClassIdentifier: 
+  _cardName: card_name_3
+  _cardDescription: card_des_3
+  _cardImage: {fileID: -764573199, guid: b77e6cd3f098f3643ad024c4c73e2114, type: 3}
+  _cardImageColor: {r: 1, g: 0.9025975, b: 0.72075474, a: 1}
+  _cardTier: 0
+  _cardCost: 0
+  _maxCardLevel: 5
+  _cardParams:
+    _serializedList: []
+  _spriteName: 
+  infiniteLevel: 1
+  _waitingtimIncreasePercent: 0.1

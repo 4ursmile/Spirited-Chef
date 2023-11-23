@@ -26,6 +26,7 @@ namespace UI
         private Action _closeCallback;
         public void SetRecipe(List<BaseFoodSO> baseFoodSOs, Vector3 position, Action closeCallback = null)
         {
+            _listImageItem.Clear();
             _selfRect.sizeDelta = new Vector2(_width * baseFoodSOs.Count + _space * (baseFoodSOs.Count - 1) + _deltaPaddingHoz, _height);
             for (int i = 0; i < baseFoodSOs.Count; i++)
             {
@@ -33,6 +34,16 @@ namespace UI
                 imageItem.SetImage(baseFoodSOs[i].Icon);
                 _listImageItem.Add(imageItem);
             }
+            _closeCallback = closeCallback;
+            OpenUp(position);
+        }
+        public void SetRecipe(BaseFoodSO baseFoodSO, Vector3 position, Action closeCallback = null)
+        {
+            _listImageItem.Clear();
+            _selfRect.sizeDelta = new Vector2(_width, _height);
+            var imageItem = Instantiate(_imageItem, _rectTransform.transform);
+            imageItem.SetImage(baseFoodSO.Icon);
+            _listImageItem.Add(imageItem);
             _closeCallback = closeCallback;
             OpenUp(position);
         }
@@ -53,13 +64,13 @@ namespace UI
         {
             transform.position = position;
             transform.localScale = Vector3.zero;
-            transform.DOScale(Vector3.one, _timeOpenUp).SetEase(_easeOpenUp);
-            transform.DOMove(position + _offset, _timeOpenUp).SetEase(_easeOpenUp);
+            transform.DOScale(Vector3.one, _timeOpenUp).SetUpdate(true).SetEase(_easeOpenUp);
+            transform.DOMove(position + _offset, _timeOpenUp).SetUpdate(true).SetEase(_easeOpenUp);
         }
         public void Close()
         {
-            transform.DOScale(Vector3.zero, _timeOpenDown).SetEase(_easeOpenUp);
-            transform.DOMove(transform.position - _offset, _timeOpenDown).SetEase(_easeOpenUp).OnComplete(() => {
+            transform.DOScale(Vector3.zero, _timeOpenDown).SetUpdate(true).SetEase(_easeOpenUp);
+            transform.DOMove(transform.position - _offset, _timeOpenDown).SetUpdate(true).SetEase(_easeOpenUp).OnComplete(() => {
                 _closeCallback?.Invoke();
             });
         }

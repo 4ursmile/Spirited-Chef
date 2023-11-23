@@ -15,6 +15,12 @@ MonoBehaviour:
   _cardSilverInforSOs:
   - {fileID: 11400000, guid: 505a004bdb9fddf42adaf9ad3e757c1d, type: 2}
   _cardGoldInforSOs:
-  - {fileID: 11400000, guid: ac06da2c5b9e9b244b6b75afd28b55d5, type: 2}
+  - {fileID: 11400000, guid: d6b9d550af1036046849d57fd5fda3e2, type: 2}
+  - {fileID: 11400000, guid: 112d97a8b1c660e4798ce02e84cb7625, type: 2}
+  - {fileID: 11400000, guid: 772dcbd4fc67c904ab59dbee10e36af4, type: 2}
+  - {fileID: 11400000, guid: ca83bc9b8db3490419f505a84046600e, type: 2}
+  - {fileID: 11400000, guid: 1a21393a82506d645951fe43918c0d97, type: 2}
+  - {fileID: 11400000, guid: 5135641f6ea355f42a18b6cf679da16c, type: 2}
+  - {fileID: 11400000, guid: 45874f51a5a7a094e9137d91f4130f4e, type: 2}
   _cardDiamondInforSOs:
   - {fileID: 11400000, guid: 8ea32b527d67c374a90f59c1c374b450, type: 2}

@@ -11,33 +11,29 @@ namespace ObjectS
     public class StoreObject : InteractiveObject
     {
         [SerializeField] private ListTabConfigSO _listTabConfigSO;
-        private GameController _gameController;
         public override bool Interact(CharacterControllerS controllerS, GameController gameController)
         {
             if (controllerS == null)
             {
                 return false;
             }
-            if (controllerS.CurrentHoldFood != null || controllerS.CurrentHoldObject != null) 
+            if (controllerS.CurrentHoldFood != null) 
             {
                 _inGameUIBridgeSO.SetWarningText("mess_carrying", transform.position);
                 return false;
             }
-            _gameController = gameController;
             return base.Interact(controllerS, gameController);
         }
-        public override void PerformInteraction(GameController gameController)
+        public override void PerformInteraction(CharacterControllerS controller, GameController gameController)
         {
-            _currentController.ChangeState(_currentController.IdleState);
             if (gameController.IsFocused)
             {
-                _currentController.RemoveCurrentTarget();
+                controller.RemoveCurrentTarget();
                 return;
             }
-            if (_currentController == null)
-                return;
-            gameController.RequireFocussing(_currentController);
+            base.PerformInteraction(controller, gameController);
             _available = false;
+            _gameController.RequireFocussing(_currentController);
             _inGameUIBridgeSO.UseTabGroup(_listTabConfigSO, this);
         }
         public override void OnFoodSelected(BaseFoodSO food)
@@ -45,12 +41,13 @@ namespace ObjectS
             if (food != null && _currentController != null)
             {
                 _currentController.SetHoldFood(food);
-                UniversalObjectInstance.Instance.ChangeMoney(-food.Price, _currentController.transform.position, 1f);
-
+                int price = (int)(food.Price*UniversalObjectInstance.Instance.OutcomeMultiplier);
+                UniversalObjectInstance.Instance.ChangeMoney(-price, _currentController.transform.position, 1f);
+                _currentController.RemoveCurrentTarget();
             }
-            _currentController?.RemoveCurrentTarget();
-            _available = true;
             _gameController.UnFocus();
+            _currentController = null;
+            _available = true;
         }
     }
 }

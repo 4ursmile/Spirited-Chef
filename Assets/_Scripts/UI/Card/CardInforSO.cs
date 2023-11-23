@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Assets.SimpleLocalization.Scripts;
 using AYellowpaper.SerializedCollections;
 using UnityEngine;
 using UnityEngine.U2D;
@@ -10,47 +11,29 @@ namespace UI
     [CreateAssetMenu(fileName = "CardInforSO", menuName = "ScriptableObjects/Card/CardBase", order = 1)]
     public class CardInforSO : ScriptableObject, IComparable, IComparer
     {
-        [SerializeField] private string _cardName;
-        [SerializeField] private string _cardDescription;
-        [SerializeField] private Sprite _cardImage;
-        [SerializeField] private Color _cardImageColor = Color.white;
-        [SerializeField] private CardTier _cardTier;
-        [SerializeField] private int _cardCost;
-        [SerializeField] private int _maxCardLevel;
-        [SerializeField] private SerializedDictionary<string, List<float>> _cardParams;
-        [SerializeField] private string _spriteName;
-        [SerializeField] private bool infiniteLevel = false;
-        private int _cardLevel;
+        [SerializeField] protected string _cardName;
+        [SerializeField] protected string _cardDescription;
+        [SerializeField] protected Sprite _cardImage;
+        [SerializeField] protected Color _cardImageColor = Color.white;
+        [SerializeField] protected CardTier _cardTier;
+        [SerializeField] protected int _cardCost;
+        [SerializeField] protected int _maxCardLevel;
+        [SerializeField] protected SerializedDictionary<string, List<float>> _cardParams;
+        [SerializeField] protected string _spriteName;
+        [SerializeField] protected bool infiniteLevel = false;
+        protected int _cardLevel;
         public CardTier CardTier => _cardTier;
         public bool InfiniteLevel => infiniteLevel;
-        private string CardDescriptionBuilder(object[] cardParams)
-        {
-            string cardDes = _cardDescription;  
-            var strRes = String.Format(cardDes, cardParams);
-            return strRes;
-        }
-        private object[] cardParamsBuidler()
-        {
-            object[] cardParams = new object[_cardParams.Count];
-            foreach (var (item, index) in _cardParams.Enumerate())
-            {
-                cardParams[index] = item.Value[_cardLevel];
-            }
-            return cardParams;
-        }
-        public string GetCardDescription => CardDescriptionBuilder(cardParamsBuidler());
-        public float GetCardParam(string key) => _cardParams[key][_cardLevel];
-        public int GetCardParamInt(string key) => Mathf.RoundToInt(_cardParams[key][_cardLevel]);
-        public string CardDescription => _cardDescription;
         public Sprite CardImage => _cardImage;
         public int CardCost => _cardCost;
         public int CardLevel => _cardLevel;
         public int CardMaxLevel => _maxCardLevel;
         public int CurrentCardAvailable => _maxCardLevel - _cardLevel;
-        public string CardName => _cardName;
+        public virtual string CardName => LocalizationManager.Localize(_cardName);
+        public virtual string CardDescription => LocalizationManager.Localize(_cardDescription);
         public bool IsReachMaxLevel => _cardLevel >= _maxCardLevel;
         public Color CardImageColor => _cardImageColor;
-        private void LevelUp()
+        protected void LevelUp()
         {
             if (_cardLevel < _maxCardLevel)
             {

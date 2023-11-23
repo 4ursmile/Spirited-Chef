@@ -67,7 +67,7 @@ namespace UI
         {
             if (foodSO != null)
             {
-                _interactiveObject.OnFoodSelected(Instantiate(foodSO));
+                _interactiveObject.OnFoodSelected(foodSO);
                 DisableUIPanel();
             } else
             {

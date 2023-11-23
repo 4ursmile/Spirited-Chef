@@ -1,13 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Data;
 using UnityEngine;
 using Manager;
 using UnityEngine.AddressableAssets;
 using System;
 using UI;
-using System.Linq;
-using Unity.VisualScripting;
+using Cysharp.Threading.Tasks;
 namespace Architecture
 {
     [CreateAssetMenu(fileName = "SoundManagerSO", menuName = "ScriptableObjects/Architecture/SoundManagerSO", order = 1)]
@@ -33,16 +31,30 @@ namespace Architecture
                 (source) => Destroy(source.gameObject),
                 false, 5, 5);
         }
-        public AudioSource RentAudioSource (out bool isNew)  {
+        public async void RentAudioSource (AudioClip clip, float time)  {
             var source = _sfxSourcePool.Get();
             if (source == null)
             {
-                source = Instantiate(SFXSource);
-                source.volume = SFXSource.volume;
-                isNew = true;
-                return source;
+                return;
             }
-            isNew = false;
+            source.volume = SFXSource.volume;
+            source.clip = clip;
+            source.loop = true;
+            source.Play();
+            await UniTask.WaitForSeconds(time);
+            source.Stop();
+            source.loop = false;
+            _sfxSourcePool.Release(source);
+        }
+        public AudioSource RentAudioSource()
+        {
+            var source = _sfxSourcePool.Get();
+            if (source == null)
+            {
+                var a = Instantiate(SFXSource);
+                a.volume = SFXSource.volume;
+                return a;
+            }
             source.volume = SFXSource.volume;
             return source;
         }

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1750793354320160958}
   - component: {fileID: 8957858452556212034}
+  - component: {fileID: -4547618542613972017}
   m_Layer: 0
   m_Name: Customer
   m_TagString: Untagged
@@ -54,6 +55,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-4547618542613972017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4358063815479317478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09e15b4cb5bb3a74c97a2d19b1bfc0db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spriteRenderer: {fileID: 3212681576519250876}
+  _ease: 4
+  _pathType: 1
+  _maximumTime: 1
+  _maximumDistance: 3
+  _inGameUIBridgeSO: {fileID: 11400000, guid: 7e4374be52fba714a9234da27709481b, type: 2}
 --- !u!1 &4389040097200493645
 GameObject:
   m_ObjectHideFlags: 0

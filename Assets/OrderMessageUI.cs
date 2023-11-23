@@ -14,27 +14,28 @@ public class OrderMessageUI : MonoBehaviour
     }
     private void Start() {
         Close();
-        _isOrderd = false;
     }
     [SerializeField] private TextMeshProUGUI _textMeshProUGUI;
     [SerializeField] private Image _counterImage;   
     [SerializeField] private InGameUIBridgeSO _uiBridge;
+    [SerializeField] private Ease ease;
     string _text;
-    private bool _isOrderd = false;
-    public bool IsOrderd => _isOrderd;
     private void OnEnable() {
         LocalizationManager.LocalizationChanged += OnLocalizationChanged;
     }
     public void SetText(string text, float waitingTime = 0)
     {
-        _isOrderd = true;
+
         _text = text;
         gameObject.SetActive(true);
         transform.localScale = Vector3.zero;
-        transform.DOScale(Vector3.one, .5f).SetEase(Ease.OutBounce);
+        transform.DOScale(Vector3.one, .5f).SetUpdate(true).SetEase(Ease.OutBounce);
         _textMeshProUGUI.text = LocalizationManager.Localize(text);
         _textMeshProUGUI.font = LocalizationManager.GetFont();
-        StartCoroutine(Counter(waitingTime));
+        _counterImage.fillAmount = 1;
+        _counterImage.DOFillAmount(0, waitingTime).SetUpdate(true).SetEase(ease).onComplete += () => {
+            Close();
+        };
     }
     private void OnDisable() {
         LocalizationManager.LocalizationChanged -= OnLocalizationChanged;
@@ -46,17 +47,9 @@ public class OrderMessageUI : MonoBehaviour
         _textMeshProUGUI.text = LocalizationManager.Localize(_text);
         _textMeshProUGUI.font = LocalizationManager.GetFont();
     }
-    public IEnumerator Counter(float waitingTime)
-    {
-        _counterImage.fillAmount = 1;
-        _counterImage.DOFillAmount(0, waitingTime).SetEase(Ease.OutCirc);
-        yield return new WaitForSeconds(waitingTime);
-        Close();
-    }
     public void Close()
     {
-        StopAllCoroutines();
-        _isOrderd = false;
-        transform.DOScale(Vector3.zero, .5f).SetEase(Ease.InBack).onComplete += () => gameObject.SetActive(false);
+        transform.DOScale(Vector3.zero, .3f).SetUpdate(true).SetEase(Ease.InBack).onComplete += () => gameObject.SetActive(false);
+        _counterImage.DOKill();
     }
 }

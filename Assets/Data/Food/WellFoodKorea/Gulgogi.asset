@@ -19,7 +19,7 @@ MonoBehaviour:
   _price: 3000
   _level: 0
   _calorie: 0
-  _timeToPrepare: 0
+  _timeToPrepare: 5
   _isUnlocked: 0
   <NeedToWash>k__BackingField: 0
   <Intergients>k__BackingField:

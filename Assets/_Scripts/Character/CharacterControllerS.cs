@@ -10,6 +10,7 @@ using ObjectS;
 using DG.Tweening;
 using Manager;
 using UnityEngine.Animations.Rigging;
+using Architecture;
 namespace Behaviour
 {
     [RequireComponent(typeof(NavMeshAgent))]
@@ -18,7 +19,8 @@ namespace Behaviour
         [SerializeField] private CharacterCustomSO _characterCustomSO;
         private CharacterCustomsie _characterCustomsie;
         [SerializeField] private Transform _holdTransform;
-        [SerializeField] private SpriteFollow _spriteFollowPrefab;
+        [SerializeField] private InGameFoodInstance _spriteFollowPrefab;
+        [SerializeField] private InGameUIBridgeSO _uib;
         private RigBuilder _rigBuilder;
 
         public string Name => _characterCustomSO.Name;
@@ -66,9 +68,6 @@ namespace Behaviour
         public Vector3 Destination => _navMeshAgent.destination;
         public Action OnDestinationReachedCallBacks {get; private set;}
         public InteractiveObject CurrentTarget {get; private set;}
-        public RequireObject CurrentHoldObject {get; private set;}
-        public RequireObjectType CurrentHoldObjectType => CurrentHoldObject?.RequireObjectType ?? RequireObjectType.None;
-        public BaseFoodSO CurrentHoldFood {get; private set;}
         public void OnDestinationReachedCallBack(Action callBack)
         {
             OnDestinationReachedCallBacks = callBack;
@@ -96,12 +95,18 @@ namespace Behaviour
         }
         public void SetDestination(Vector3 destination)
         {
+            if (IsWorking) return;
             _navMeshAgent.isStopped = false;
             _navMeshAgent.SetDestination(destination);
             _stateMachine.ChangeState(MoveState);
             OnDestinationReachedCallBack(() => {
                 _stateMachine.ChangeState(IdleState);
             });
+            float rate = UnityEngine.Random.Range(0, 1f);
+            if (rate > 0.8f)
+            {
+                _uib.OpenEmoji(Database.GetEmoji(), transform.position);
+            }
         }
         public void StopMoving()
         {
@@ -109,18 +114,23 @@ namespace Behaviour
         }
         public void SetObjectTive(InteractiveObject target, GameController gameController)
         {
+            if (IsWorking) return;
             _navMeshAgent.isStopped = false;
             _navMeshAgent.SetDestination(target.Position);
             _stateMachine.ChangeState(MoveState);
             CurrentTarget = target;
             OnDestinationReachedCallBack(() => {
                 RotateToTarget(target.transform.position);
-                target.PerformInteraction(gameController);
+                target.PerformInteraction(this, gameController);
             });
+            float rate = UnityEngine.Random.Range(0, 1f);
+            if (rate < 0.2f)
+            {
+                _uib.OpenEmoji(Database.GetEmoji(), transform.position);
+            }
         }
         public void RemoveCurrentTarget()
         {
-            CurrentTarget?.StopInteract();
             CurrentTarget = null;
         }
         private void RotateToTarget(Vector3 target)
@@ -151,36 +161,33 @@ namespace Behaviour
         {
             _characterCustomsie.Select();
         }
-        public void SetHoldSomething(RequireObject requireObject)
-        {
-            
-            HoldSomething();
-            CurrentHoldObject = Instantiate(requireObject, _holdTransform);
-            CurrentHoldObject.transform.localPosition = Vector3.zero;
-        }
-        public void RemoveHoldSomething()
-        {
-            CurrentHoldObject = null;
-            UnHoldSomething();
-        }
-        private SpriteFollow _spriteFollow;
+        private InGameFoodInstance _spriteFollow;
+        public InGameFoodInstance CurrentHoldFood => _spriteFollow;
         public void SetHoldFood(BaseFoodSO baseFoodSO, Action<BaseFoodSO> oldFoodCallBack = null)
         {
             HoldSomething();
             if (_spriteFollow != null)
             {
-                oldFoodCallBack?.Invoke(CurrentHoldFood);
-                _spriteFollow.SetTarget(_holdTransform, baseFoodSO);
-                CurrentHoldFood.Set(baseFoodSO);
+                oldFoodCallBack?.Invoke(CurrentHoldFood.FoodSO);
+                _spriteFollow.SwapFood(baseFoodSO);
                 return;
             }
             _spriteFollow = Instantiate(_spriteFollowPrefab);
             _spriteFollow.SetTarget(_holdTransform, baseFoodSO);
-            CurrentHoldFood = baseFoodSO;
+        }
+        public void SetHoldFood(InGameFoodInstance foodInstance)
+        {
+            HoldSomething();
+            if (_spriteFollow != null)
+            {
+                _spriteFollow.Destroy();
+            }
+            _spriteFollow = foodInstance;
+            _spriteFollow.SetTargetOnly(_holdTransform);
         }
         public void RemoveHoldFood()
         {
-            CurrentHoldFood = null;
+            _spriteFollow = null;
             UnHoldSomething();
         }
         private void HoldSomething()

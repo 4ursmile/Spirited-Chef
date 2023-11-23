@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 093215734b61b9242bd14143940490f1, type: 3}
   m_Name: PhoGa
   m_EditorClassIdentifier: 
-  _nameID: food_name_1
-  _descriptionID: food_des_1
+  _nameID: food_name_2
+  _descriptionID: food_des_2
   _icon: {fileID: -339756911, guid: 4e8fd47607dfb6c4ba161e44d345afbb, type: 3}
   _iconScale: 1
   _price: 2500
   _level: 0
-  _calorie: 0
-  _timeToPrepare: 0
+  _calorie: 500
+  _timeToPrepare: 5
   _isUnlocked: 0
   <NeedToWash>k__BackingField: 0
   <Intergients>k__BackingField:

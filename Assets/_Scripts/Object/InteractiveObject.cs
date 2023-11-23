@@ -13,11 +13,21 @@ namespace ObjectS
         [SerializeField] protected AudioClip _onPerformClip;
         [SerializeField] protected InteractiveObjectSO _interactiveObjectSO;
         [SerializeField] protected InGameUIBridgeSO _inGameUIBridgeSO;
+        public SoundManagerSO SoundManager => _soundManagerSO;
+        public AudioClip OnPerformClip => _onPerformClip;
+        public InteractiveObjectSO InteractiveObjectSO => _interactiveObjectSO;
+        public InGameUIBridgeSO UIBridge => _inGameUIBridgeSO;
         protected Vector3 _positionOffset;
         protected bool _requireFocus = false;
         protected bool _available = true;
         public bool Available => _available;
+        public void SetAvailble(bool value)
+        {
+            _available = value;
+        }
         protected CharacterControllerS _currentController;
+        protected GameController _gameController;
+        public GameController GameController => _gameController;
         public Vector3 Position => transform.position + _positionOffset;
         public bool CurrentlyInteracting => _currentController != null;
         public CharacterControllerS CurrentController => _currentController;
@@ -28,13 +38,8 @@ namespace ObjectS
 
         public virtual bool Interact(CharacterControllerS controllerS, GameController gameController)
         {
-            if (controllerS == null)
+            if (controllerS == null || controllerS.IsWorking)
             {
-                return false;
-            }
-            if ( _currentController != null)
-            {
-                _inGameUIBridgeSO.SetWarningText("mess_already", transform.position);
                 return false;
             }
 
@@ -43,30 +48,27 @@ namespace ObjectS
                 _inGameUIBridgeSO.SetWarningText("mess_available", transform.position);
                 return false;
             }
-            _currentController = controllerS;
-            _currentController.SetObjectTive(this, gameController);
+            controllerS.SetObjectTive(this, gameController);
             return true;
         }
         public virtual void StopInteract()
         {
             _currentController = null;
         }
-        public virtual void PerformInteraction(GameController gameController)
+        public virtual void PerformInteraction(CharacterControllerS controller, GameController gameController)
         {
-            _currentController.ChangeState(_currentController.IdleState);
-            if (_requireFocus && gameController.IsFocused)
-                return;
-            if (_currentController == null)
-                return;   
-            Debug.Log("Performing interaction with " + gameObject.name);
+            controller.ChangeState(controller.IdleState);
+            _currentController = controller;
+            _gameController = gameController;
         }
         private void Awake() {
             _positionOffset = _interactiveObjectSO.PositionOffset;
             _requireFocus = _interactiveObjectSO.RequireFocus;
+            Init();
+
         }
         void Start()
         {   
-            Init();
         }
         public virtual void Init()
         {
@@ -79,6 +81,18 @@ namespace ObjectS
         public virtual void OnFoodSelected(BaseFoodSO food)
         {
 
+        }
+        public void DoDestroy(params GameObject[] gameObjects)
+        {
+            foreach (var item in gameObjects)
+            {
+                Destroy(item);
+            }
+        }
+        protected ObjectStateMachine _stateMachine;
+        public void ChangeState(IBaseObjectState state)
+        {
+            _stateMachine.ChangeState(state);
         }
     }
 }

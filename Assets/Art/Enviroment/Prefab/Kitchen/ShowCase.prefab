@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.7069834, y: 0, z: 0, w: 0.7072302}
   m_LocalPosition: {x: -0, y: -1.05, z: -161.82}
-  m_LocalScale: {x: 82.88, y: 82.88, z: 82.88}
+  m_LocalScale: {x: 84.98999, y: 84.98999, z: 84.98999}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -126,4 +126,5 @@ MonoBehaviour:
   _throwEase: 27
   _throwOffset: {x: 0, y: 0.5, z: 0}
   _throwHeight: 3
-  _orderMessageUI: {fileID: 0}
+  _uiBridge: {fileID: 11400000, guid: 7e4374be52fba714a9234da27709481b, type: 2}
+  _onOrderFailClip: {fileID: 8300000, guid: a63b09a2419747c4292d49040931e195, type: 3}

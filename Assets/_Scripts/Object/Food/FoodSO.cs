@@ -31,9 +31,12 @@ namespace ObjectS
         public bool IsUnlocked => _isUnlocked;
         public List<float> GetEmbedding => Database.Embedded.QueryEmbedd(_descriptionID);
         public string EmbeddedKey => _descriptionID;
-        public SpriteFollow IngameFoodInstance { get; private set; }
         public static bool IsWellFood(BaseFoodSO food) => food is WellFoodSO;
         public static bool IsMaterial(BaseFoodSO food) => food is MaterialSO;
+        public void Destroy()
+        {
+            Destroy(this);
+        }
         public virtual void Set(BaseFoodSO baseFoodSO)
         {
             _nameID = baseFoodSO._nameID;
@@ -71,10 +74,6 @@ namespace ObjectS
             if (otherFood != null)
                 return NameID.CompareTo(otherFood.Level);
             return 0;
-        }
-        public void SetIngameFoodInstance(SpriteFollow follow)
-        {
-            IngameFoodInstance = follow;
         }
 
     }

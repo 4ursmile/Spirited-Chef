@@ -17,6 +17,7 @@ namespace Manager
         [SerializeField] private SoundManagerSO _soundManagerSO;
         [SerializeField] private AudioClip _onSelectClip;
         [SerializeField] private AudioClip _onObecjtiveClip;
+        [SerializeField] private AudioClip _onGroundClip;
         private InputManager _inputManager;
         private CameraController _cameraController;
         private Camera _camera;
@@ -52,14 +53,17 @@ namespace Manager
                 if (clickableObject.Type == ObjectType.Character)
                 {
                     CharacterControllerS selectable = hit.collider.GetComponent<CharacterControllerS>();
+
                     SelectCharacter(selectable);
                 }
                 else if (clickableObject.Type == ObjectType.Ground)
                 {
                     if (_currentSelected != null)
                     {
+                        if (_currentSelected.IsWorking) return;
                         _currentSelected.RemoveCurrentTarget();
                         _currentSelected.SetDestination(hit.point);
+                        _soundManagerSO.Play(_onGroundClip);
                     }
                 } else if (clickableObject.Type == ObjectType.Interactive)
                 {
@@ -70,7 +74,6 @@ namespace Manager
                     _soundManagerSO.Play(_onSelectClip);
                 }
             }
-
         }
 
         private void SelectCharacter(CharacterControllerS selectable)

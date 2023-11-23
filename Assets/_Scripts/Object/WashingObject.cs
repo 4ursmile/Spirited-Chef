@@ -22,13 +22,13 @@ namespace ObjectS
                 _inGameUIBridgeSO.SetWarningText("mess_notsuitable", transform.position);
                 return false;
             }
-            MaterialSO materialSO = controllerS.CurrentHoldFood as MaterialSO;
+            MaterialSO materialSO = controllerS.CurrentHoldFood.FoodSO as MaterialSO;
             if (materialSO == null)
             {
                 _inGameUIBridgeSO.SetWarningText("mess_food", transform.position);
                 return false;
             } 
-            if (!materialSO.NeedToWash)
+            if (!controllerS.CurrentHoldFood.NeedToWash)
             {
                 _inGameUIBridgeSO.SetWarningText("mess_nonneed", transform.position);
                 return false;
@@ -36,13 +36,10 @@ namespace ObjectS
             return base.Interact(controllerS, gameController);
         }
         private BaseFoodSO _backwardFood;
-        public override void PerformInteraction(GameController gameController)
+        public override void PerformInteraction(CharacterControllerS controllerS, GameController gameController)
         {
-            _currentController.ChangeState(_currentController.IdleState);
-            if (_currentController == null)
-                return;
-        
-            var food = _currentController.CurrentHoldFood as MaterialSO;
+            base.PerformInteraction(controllerS, gameController);
+            var food = _currentController.CurrentHoldFood.FoodSO as MaterialSO;
             if (food == null)
                 return;
             _available = false;
@@ -53,18 +50,9 @@ namespace ObjectS
 
         public async void ProcessingFood(MaterialSO food)
         {
-            bool isNew;
-            var source = _soundManagerSO.RentAudioSource(out isNew);
-            source.clip = _onPerformClip;
-            source.loop = true;
-            source.Play();
+            _soundManagerSO.RentAudioSource(_onPerformClip, food.WashTime);
             _inGameUIBridgeSO.SetPartical(0, transform.position, food.WashTime);
-            await UniTask.WaitForSeconds(food.WashTime);
-            source.Stop();
-            if (isNew)
-                Destroy(source.gameObject);
-            else
-                _soundManagerSO.ReleaseAudioSource(source);
+            await UniTask.WaitForSeconds(food.WashTime*UniversalObjectInstance.Instance.TimePrepareMultiplier);
             _currentController.EndWorking();
             _currentController.CurrentHoldFood.NeedToWash = false;
             _available = true;

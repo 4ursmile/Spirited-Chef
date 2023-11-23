@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad8262e0026dcd642a6ea09ea8102187, type: 3}
+  m_Name: EmojiData
+  m_EditorClassIdentifier: 
+  _emojiData:
+    _serializedList:
+    - Key: very_bad
+      Value: {fileID: 21300000, guid: 4bc7d16df445d904c87e9f5348598470, type: 3}
+    - Key: bad
+      Value: {fileID: 21300000, guid: 4aacd2a1e9e273f46993b5ecf0f440f2, type: 3}
+    - Key: ok
+      Value: {fileID: 21300000, guid: be0ab6e6ad1f3a04d9cff872c69079b5, type: 3}
+    - Key: excellent
+      Value: {fileID: 21300000, guid: 5f949c67b945eca4993e89060671407c, type: 3}
+    - Key: good
+      Value: {fileID: 21300000, guid: b303c3ba6417fc14696606fb8e472252, type: 3}
+    - Key: no
+      Value: {fileID: 21300000, guid: 71aa46a86688e75429b08284812ae3f1, type: 3}
+    - Key: angry
+      Value: {fileID: 21300000, guid: 75a8aa0e5115b324aaab6519831991f4, type: 3}
+    - Key: stun
+      Value: {fileID: 21300000, guid: d1e56e336ce662147a82006db30c1966, type: 3}
+    - Key: dis
+      Value: {fileID: 21300000, guid: 9b055fca33b81a045b39664129cc5e71, type: 3}

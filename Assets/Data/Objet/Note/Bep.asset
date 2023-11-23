@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: note_bep_name
   _description: note_bep_des
-  _positionOffset: {x: 0, y: 0, z: 0.3}
+  _positionOffset: {x: 0, y: 0, z: 1}
   _canOverlap: 0
   _requireFocus: 1

@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using Character;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
-
+using DG.Tweening;
 public class CustomerManager : MonoBehaviour
 {
     [SerializeField] private CustomerMovePathSO _movePathSO;
@@ -13,50 +13,58 @@ public class CustomerManager : MonoBehaviour
     private List<bool> _emptyPoint;
     private void Awake() {
         _maxCapacity = _movePathSO.InPath.Count;
-        _emptyPoint = new List<bool>(_movePathSO.InPath.Count);
-        _customerQueue = new Queue<CustomerCharacter>(_movePathSO.InPath.Count);
+        _emptyPoint = new List<bool>(_maxCapacity);
+        for (int i = 0; i < _maxCapacity; i++)
+        {
+            _emptyPoint.Add(false);
+        }
+        _customerQueue = new Queue<CustomerCharacter>(_maxCapacity);
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private void Start() {
+        StartCoroutine(CustomerComeIn());
+        UniversalObjectInstance.Instance.OrderCompletedAction += CompleteOrder;
     }
     private void OnDestroy() {
         StopAllCoroutines();
-        UniversalObjectInstance.Instance.OrderCompleteAction -= CompleteOrder;
+        UniversalObjectInstance.Instance.OrderCompletedAction -= CompleteOrder;
     }
-    private void CompleteOrder(float score)
+    private async void CompleteOrder(float score)
     {
+        _emptyPoint[_maxCapacity-1] = false;
+        var cus = _customerQueue.Dequeue();
 
+        cus.GetOrder(score);
+        await UniTask.WaitForSeconds(1f);
+        cus.GoTo(_movePathSO.OutPath.ToArray(), 0 , () =>
+        {
+            Destroy(cus.gameObject);
+        });
+        UpdateQueue();
     }
     public void NextCustomerCome()
     {
         if (_customerQueue.Count >= _maxCapacity)
             return;
-        var customer = Instantiate(_customerPrefab);
-        customer.transform.position = _movePathSO.InPath[0];
+        var customer = Instantiate(_customerPrefab, _movePathSO.InPath[0], _customerPrefab.transform.rotation);
         customer.SetSprite(_movePathSO.CustomerSprites.GetRandom<Sprite>());
         _customerQueue.Enqueue(customer);
         int nextpoint = GetFirstEmptyIndex();
         _emptyPoint[nextpoint] = true;
         if (nextpoint == _maxCapacity -1)
-            customer.GoTo(_movePathSO.InPath.Range(0, nextpoint+1),
+            customer.GoTo(_movePathSO.InPath.Range(0, nextpoint+1), nextpoint,
             () =>
             {
                 UniversalObjectInstance.Instance.NextOrder();
             });
         else
-            customer.GoTo(_movePathSO.InPath.Range(0, nextpoint+1));
+        {
+            customer.transform.DOKill();
+            customer.GoTo(_movePathSO.InPath.Range(0, nextpoint+1), nextpoint);
+        }
     }
     private int GetFirstEmptyIndex()
     {
-        for (int i = _emptyPoint.Count-1; i>0; i--)
+        for (int i = _maxCapacity-1; i>0; i--)
         {
             if (!_emptyPoint[i])
                 return i;
@@ -69,14 +77,16 @@ public class CustomerManager : MonoBehaviour
         {
             int nextpoint = GetFirstEmptyIndex();
             _emptyPoint[nextpoint] = true;
+            if (nextpoint >0)
+                _emptyPoint[nextpoint-1] = false;
             if (nextpoint == _maxCapacity -1)
-                customer.GoTo(_movePathSO.InPath.Range(0, nextpoint+1),
+                customer.GoTo(_movePathSO.InPath.Range(customer.LastIndex, nextpoint+1), nextpoint,
                 () =>
                 {
                     UniversalObjectInstance.Instance.NextOrder();
                 });
             else
-                customer.GoTo(_movePathSO.InPath.Range(0, nextpoint+1));
+                customer.GoTo(_movePathSO.InPath.Range(customer.LastIndex, nextpoint+1), nextpoint);
 
         }
     }

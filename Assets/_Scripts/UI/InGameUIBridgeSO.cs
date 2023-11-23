@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Behaviour;
 using Manager;
 using ObjectS;
 using UI;
@@ -119,16 +120,14 @@ namespace Architecture
                 _counterPool.Release(counterUI);
             });
         } 
-        public IntergridientUI GetIntergridientUI(out bool isNew)
+        public IntergridientUI GetIntergridientUI()
         {
             var intergridientUI = _intergridientUIPool.Get();
             if (intergridientUI == null)
             {
                 intergridientUI = Instantiate(_intergridientUI, _inGameUIManager.transform);
-                isNew  = true;
                 return intergridientUI;
             }
-            isNew = false;
             return intergridientUI;
         }
         public void ReleaseIntergridientUI(IntergridientUI intergridientUI)
@@ -145,6 +144,9 @@ namespace Architecture
             particel.SetPosition(position);
             particel.Play(duration);
         }
+        [SerializeField] private EmojiBehaviour _emojiBehaviourPrefab;
+        [SerializeField] private int _emojiPoolSize = 5;
+        private LinkedListPool<EmojiBehaviour> _emojiPool;
         public void InitPool()
         {
             _warningTextPool = new LinkedListPool<WarningText>(
@@ -204,12 +206,45 @@ namespace Architecture
                 _counterPoolSize,
                 _counterPoolSize
             );
+            _emojiPool = new LinkedListPool<EmojiBehaviour>(
+                () => {
+                    EmojiBehaviour emojiBehaviour = Instantiate(_emojiBehaviourPrefab);
+                    emojiBehaviour.gameObject.SetActive(false);
+                    return emojiBehaviour;
+                },
+                (emojiBehaviour) => {
+                    emojiBehaviour.gameObject.SetActive(true);
+                },
+                (emojiBehaviour) => {
+                    emojiBehaviour.gameObject.SetActive(false);
+                },
+                (emojiBehaviour) => {
+                    Destroy(emojiBehaviour.gameObject);
+                },
+                false,
+                _emojiPoolSize,
+                _emojiPoolSize
+            );
         }
-    
+        public void OpenEmoji(string text, Vector3 position)
+        {
+            var emoji = _emojiPool.Get();
+            emoji.SetSpriteByKey(text, position, () => {
+                _emojiPool.Release(emoji);
+            });
+        }
+        public void OpenEmoji(Sprite sprite, Vector3 position)
+        {
+            var emoji = _emojiPool.Get();
+            emoji.SetSprite(sprite, position, () => {
+                _emojiPool.Release(emoji);
+            });
+        }
 
     }
     public partial class InGameUIBridgeSO
     {
+        
         private CardManager _cardManager;
         public void SetCardManager(CardManager cardManager)
         {
@@ -237,11 +272,14 @@ namespace Architecture
         {
             _orderMessageUI = orderMessageUI;
         }
-        public void SetMessageUI(string Text, float waitingTime)
+        public void OpenOrderMessageUI(string Text, float waitingTime)
         {
             _orderMessageUI.SetText(Text, waitingTime);
         }
-         
+        public void CloseOrderMessageUI()
+        {
+            _orderMessageUI.Close();
+        }
     }
 }
 

@@ -34,3 +34,20 @@ MonoBehaviour:
   - {x: -36.35, y: 1.5, z: 10.88}
   - {x: -34.58, y: 1.5, z: 10.88}
   - {x: -32.1, y: 1.5, z: 11.76}
+  _sprites:
+  - {fileID: 475386035, guid: 72f19110d7afd714a90d4d6f4d3d89c6, type: 3}
+  - {fileID: -1888032028, guid: 72f19110d7afd714a90d4d6f4d3d89c6, type: 3}
+  - {fileID: -1434069384, guid: 72f19110d7afd714a90d4d6f4d3d89c6, type: 3}
+  - {fileID: -1893372073, guid: 72f19110d7afd714a90d4d6f4d3d89c6, type: 3}
+  - {fileID: 849664198, guid: 72f19110d7afd714a90d4d6f4d3d89c6, type: 3}
+  - {fileID: -771317908, guid: 72f19110d7afd714a90d4d6f4d3d89c6, type: 3}
+  - {fileID: -164643393, guid: 72f19110d7afd714a90d4d6f4d3d89c6, type: 3}
+  - {fileID: 1233646059, guid: 72f19110d7afd714a90d4d6f4d3d89c6, type: 3}
+  - {fileID: -1361683991, guid: 72f19110d7afd714a90d4d6f4d3d89c6, type: 3}
+  - {fileID: -1486232761, guid: 72f19110d7afd714a90d4d6f4d3d89c6, type: 3}
+  - {fileID: -1361913576, guid: 72f19110d7afd714a90d4d6f4d3d89c6, type: 3}
+  - {fileID: -897250524, guid: 72f19110d7afd714a90d4d6f4d3d89c6, type: 3}
+  - {fileID: 1662078109, guid: 72f19110d7afd714a90d4d6f4d3d89c6, type: 3}
+  - {fileID: 978819916, guid: 72f19110d7afd714a90d4d6f4d3d89c6, type: 3}
+  - {fileID: -1454870175, guid: 72f19110d7afd714a90d4d6f4d3d89c6, type: 3}
+  - {fileID: 1310044081, guid: 72f19110d7afd714a90d4d6f4d3d89c6, type: 3}

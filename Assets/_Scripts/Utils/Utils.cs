@@ -27,6 +27,12 @@ public static class Utils
         c.a = alpha;
         img.color = c;
     }
+    public static void SetAlpha(this SpriteRenderer sprite, float alpha)
+    {
+        Color c = sprite.color;
+        c.a = alpha;
+        sprite.color = c;
+    }
     public static Vector3 ToVec3(this Vector2 v2) => new Vector3(v2.x, 0, v2.y);
     public static float MinMaxScale(this float value, float min, float max) 
     {
@@ -183,7 +189,10 @@ public static class Helper
     }
     public static Vector3[] Range(this List<Vector3> vector3s, int start, int end)
     {
-
+        if (start < 0 || end > vector3s.Count)
+            return null;
+        if (start > end)
+            return vector3s.GetRange(start, 1).ToArray();
         return vector3s.GetRange(start, end - start).ToArray();
     }
     public static float GetDistanceScale(this Vector3 vs, Vector3 vd, float maxDistance) => Vector3.Distance(vs, vd) / maxDistance;

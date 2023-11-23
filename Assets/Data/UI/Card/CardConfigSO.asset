@@ -50,7 +50,7 @@ MonoBehaviour:
     - Key: 0
       Value: {fileID: 8300000, guid: 2bc39d753a5a82940abe8619591d2ca4, type: 3}
     - Key: 1
-      Value: {fileID: 8300000, guid: 2bc39d753a5a82940abe8619591d2ca4, type: 3}
+      Value: {fileID: 8300000, guid: 6410719795290714d81ba30487fc017b, type: 3}
     - Key: 2
       Value: {fileID: 8300000, guid: 2bc39d753a5a82940abe8619591d2ca4, type: 3}
   <CardDisplaySounds>k__BackingField:
@@ -66,15 +66,15 @@ MonoBehaviour:
     - Key: 0
       Value: {fileID: 8300000, guid: f796452522718c6449c8e5bed9ff631a, type: 3}
     - Key: 1
-      Value: {fileID: 8300000, guid: f796452522718c6449c8e5bed9ff631a, type: 3}
+      Value: {fileID: 8300000, guid: 2d2953ef189472640a664995edaa32dc, type: 3}
     - Key: 2
       Value: {fileID: 8300000, guid: f796452522718c6449c8e5bed9ff631a, type: 3}
   <CardCloseSounds>k__BackingField:
     _serializedList:
     - Key: 0
-      Value: {fileID: 8300000, guid: 0fb86f88ab8476045bb2772f3da402ca, type: 3}
+      Value: {fileID: 8300000, guid: 4ffa0ad82f87f9b49883fa069a243c49, type: 3}
     - Key: 1
-      Value: {fileID: 8300000, guid: 0fb86f88ab8476045bb2772f3da402ca, type: 3}
+      Value: {fileID: 8300000, guid: 4ffa0ad82f87f9b49883fa069a243c49, type: 3}
     - Key: 2
       Value: {fileID: 8300000, guid: 0fb86f88ab8476045bb2772f3da402ca, type: 3}
   Borders:
@@ -98,7 +98,7 @@ MonoBehaviour:
     - Key: 0
       Value: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 1}
     - Key: 1
-      Value: {r: 0.07775008, g: 0.2264151, b: 0.091687426, a: 1}
+      Value: {r: 0.19480242, g: 0.3018868, b: 0.19998392, a: 1}
     - Key: 2
       Value: {r: 0.08746884, g: 0.10648738, b: 0.254717, a: 1}
   ColorDoorTops:

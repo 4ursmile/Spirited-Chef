@@ -12,7 +12,6 @@ namespace ObjectS
     public class ProcessObject : InteractiveObject
     {
         [SerializeField] private ListTabConfigSO _listTabConfigSO;
-        private GameController _gameController;
         public override bool Interact(CharacterControllerS controllerS, GameController gameController)
         {
             if (controllerS == null)
@@ -24,13 +23,13 @@ namespace ObjectS
                 _inGameUIBridgeSO.SetWarningText("mess_notsuitable", transform.position);
                 return false;
             }
-            MaterialSO materialSO = controllerS.CurrentHoldFood as MaterialSO;
+            MaterialSO materialSO = controllerS.CurrentHoldFood.FoodSO as MaterialSO;
             if (materialSO == null)
             {
                 _inGameUIBridgeSO.SetWarningText("mess_food", transform.position);
                 return false;
             } 
-            if (materialSO.NeedToWash)
+            if (controllerS.CurrentHoldFood.NeedToWash)
             {
                 _inGameUIBridgeSO.SetWarningText("mess_wash", transform.position);
                 return false;
@@ -40,23 +39,20 @@ namespace ObjectS
                 _inGameUIBridgeSO.SetWarningText("mess_nothing", transform.position);
                 return false;
             }
-            _gameController = gameController;
             return base.Interact(controllerS, gameController);
         }
         private BaseFoodSO _backwardFood;
-        public override void PerformInteraction(GameController gameController)
+        public override void PerformInteraction(CharacterControllerS controller, GameController gameController)
         {
-            _currentController.ChangeState(_currentController.IdleState);
             if (gameController.IsFocused)
             {
-                _currentController.RemoveCurrentTarget();
+                controller.RemoveCurrentTarget();
                 return;
             }
-            if (_currentController == null)
-                return;
+            base.PerformInteraction(controller, gameController);
             
-            gameController.RequireFocussing(_currentController);
-            var materialSO = _currentController.CurrentHoldFood as MaterialSO;
+            gameController.RequireFocussing(controller);
+            var materialSO = controller.CurrentHoldFood.FoodSO as MaterialSO;
             if (materialSO == null)
                 return;
             var forwards = materialSO.ForwardsMaterial;
@@ -79,18 +75,9 @@ namespace ObjectS
         }
         public async void ProcessingFood(BaseFoodSO food, CharacterControllerS controllerS)
         {
-            bool isNew;
-            var source = _soundManagerSO.RentAudioSource(out isNew);
-            source.clip = _onPerformClip;
-            source.loop = true;
-            source.Play();
+            _soundManagerSO.RentAudioSource(_onPerformClip, food.TimeToPrepare);
             _inGameUIBridgeSO.SetPartical(0, transform.position, food.TimeToPrepare);
-            await UniTask.WaitForSeconds(food.TimeToPrepare);
-            source.Stop();
-            if (isNew)
-                Destroy(source.gameObject);
-            else
-                _soundManagerSO.ReleaseAudioSource(source);
+            await UniTask.WaitForSeconds(food.TimeToPrepare*UniversalObjectInstance.Instance.TimePrepareMultiplier);
             controllerS.SetHoldFood(food);
             controllerS.EndWorking();
             _available = true;
